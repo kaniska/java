@@ -3,6 +3,10 @@ package leetcode;
 import java.util.ArrayDeque;
 
 /**
+ * Container With Most Water
+Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
+
+Note: You may not slant the container.
  * @author jbu
  */
 public class ContainerWithMostWater {
@@ -12,6 +16,27 @@ public class ContainerWithMostWater {
 
     private int getArea(int[] h, int i,int j) {
         return (j-i)*Math.min(h[i],h[j]);
+    }
+
+    public int maxArea0413(int[] height) {
+        if (height==null || height.length<=1) return 0;
+        int i=0,j=height.length-1;
+        int hi=height[i],hj=height[j];
+        int max = Math.min(hi,hj)*(j-i);
+        while (i<j) {
+            if (hi<=hj) {
+                i++;
+                while (height[i]<=hi && i<j) i++;
+            } else {
+                j--;
+                while (height[j]<=hj && i<j) j--;
+            }
+            if (i>j) break;
+            hi=height[i];
+            hj=height[j];
+            max = Math.max(max,Math.min(hi,hj)*(j-i));
+        }
+        return max;
     }
 
 
