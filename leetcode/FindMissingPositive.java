@@ -3,6 +3,11 @@ package leetcode;
 import java.util.*;
 
 /**
+ * 
+ * 04/17/2012: Pay attention to check if the current number is same as the number to be exchanged
+ * In THAT case we just leave the number there
+ * OTHERWISE will infinite loop
+ * 
  * @author jbu
  */
 public class FindMissingPositive {
@@ -30,20 +35,19 @@ public class FindMissingPositive {
   /**
    * http://yewenxing.wordpress.com/2012/03/13/first-missing-positive/
    */
-  public int firstMissingPositive(int[] A) {
-    int n = A.length;
-    for (int i = 0; i < n; i++) {
-      while (A[i] != i) {
-        if (A[i] < 0 || A[i] >= n || A[i] == A[A[i]]) break;
-        int temp = A[i];
-        A[i] = A[temp];
-        A[temp] = temp;
-      }
+    public int firstMissingPositive(int[] A) {
+        int n = A.length;
+        for (int i=0;i<n;i++) {
+            while (A[i]>0 && A[i]<=n && A[i]!=A[A[i]-1]) {
+                int t = A[i];
+                A[i]  = A[t-1];
+                A[t-1]= t;
+            }
+        }
+        for (int i=0;i<n;i++) {
+            if (A[i]!=i+1) return i+1;
+        }
+        return n+1;
     }
-    for (int i = 0; i < n; i++) {
-      if (A[i] != i && i != 0) return i;
-    }
-    return n;
-  }
 }
 
