@@ -10,13 +10,10 @@ public class Roman {
   public String intToRoman(int num) {
     assert (num <= 3999 && num >= 1);
     StringBuilder sb = new StringBuilder();
-    for (int i = 0; i < N.length; i++) {
+    for (int i = 0; i < N.length && num>0; i++) {
       while (num >= N[i]) {
         sb.append(ROMAN[i]);
         num -= N[i];
-      }
-      if (num == 0) {
-        break;
       }
     }
     return sb.toString();
