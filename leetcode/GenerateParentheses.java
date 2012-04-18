@@ -33,5 +33,27 @@ public class GenerateParentheses {
         }
 
     }
+    
+    ///////////// 04/17/2012 below uses StringBuffer to hold intermediate value 
+    public ArrayList<String> generateParenthesis2(int n) {
+        ArrayList<String> result = new ArrayList<String>();
+        doGenerate2(n,0,new StringBuffer(),result);
+        return result;        
+    }
+    
+    void doGenerate2(int open, int close, StringBuffer sb, ArrayList<String> result) {
+        if (open==0 && close==0) result.add(sb.toString());
+        if (open>0) { 
+            sb.append("(");
+            doGenerate2(open-1,close+1,sb,result); 
+            sb.setLength(sb.length()-1);
+        }
+        if (close>0) {
+            sb.append(")");
+            doGenerate2(open, close-1, sb, result);
+            sb.setLength(sb.length()-1);
+        }
+        
+    }
 
 }
