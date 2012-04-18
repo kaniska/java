@@ -33,8 +33,11 @@ public class GenerateParentheses {
         }
 
     }
-    
-    ///////////// 04/17/2012 below uses StringBuffer to hold intermediate value 
+}
+
+
+///////////// 04/17/2012 below uses StringBuffer to hold intermediate value 
+class GenerateParentheses2 {
     public ArrayList<String> generateParenthesis2(int n) {
         ArrayList<String> result = new ArrayList<String>();
         doGenerate2(n,0,new StringBuffer(),result);
@@ -54,6 +57,5 @@ public class GenerateParentheses {
             sb.setLength(sb.length()-1);
         }
         
-    }
-
+    } 
 }
