@@ -18,6 +18,46 @@ If there are multiple such windows, you are guaranteed that there will always be
  * /
 
 public class MinimumWindowSubstring {
+
+    /**
+     * Improvements:
+     * http://www.leetcode.com/2010/11/finding-minimum-window-in-s-which.html
+     * (1) Use array map instead of hash map  (since we only deal with 255 chars)
+     * (2) Use additional count to check if current windows contains all char in T, instead of iterating though the map
+     * (3) Now its only O(n) 
+     * (4) We use an additional deque to track positions for only those elements in T
+     * 
+     */
+    public String minWindow(String S, String T) {
+        Deque<Integer> d = new ArrayDeque<Integer>();
+        int[] needToFind = new int[256];
+        int[] hasFound = new int[256];
+        for (int c:T.toCharArray()) needToFind[c]++;
+        
+        int min = Integer.MAX_VALUE;
+        String s = "";
+        int n=T.length(), count=0;
+        for (int i=0;i<S.length();i++) {
+            char c = S.charAt(i);
+            if (needToFind[c]<=0) continue;
+            d.addLast(i);
+            hasFound[c]++;
+            if (hasFound[c]<=needToFind[c]) count++;
+            if (count<n) continue;
+            while (!d.isEmpty()) {
+                char x = S.charAt(d.peekFirst());
+                if (needToFind[x]>=hasFound[x]) break;
+                d.removeFirst();
+                hasFound[x]--;
+            }
+            if (i-d.peekFirst()<min) {
+                min = i-d.peekFirst();
+                s = S.substring(d.peekFirst(),i+1);
+            }    
+        }
+        return s;
+    }
+
     private boolean containsAll(Map<Character,Integer> m) {
         for (int i:m.values()) {
             if (i>0) return false;
