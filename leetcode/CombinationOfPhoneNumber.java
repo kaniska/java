@@ -6,9 +6,33 @@ import java.util.ArrayList;
  * @author jbu
  */
 public class CombinationOfPhoneNumber {
+    public ArrayList<String> letterCombinations(String digits) {
+        ArrayList<String> s = new ArrayList<String>();
+        char[] current = new char[digits.length()];
+        for (int i=0;i<current.length;i++) {
+            current[i]=charKey[digits.charAt(i)-'0'][0];
+        }
+        int i;
+        while (true) {
+            s.add(new String(current));
+            for (i=digits.length()-1;i>=0;i--) {
+                int n = digits.charAt(i)-'0';
+                if (current[i]==charKey[n][charKey[n].length-1]) { // already max {
+                    current[i] = charKey[n][0];
+                } else {
+                    current[i]= (char)(current[i]+1);
+                    break;
+                }
+            }
+            if (i==-1) break;
+        }
+        return s;
+    }
+
+
 
   // this won't work since the charKey does not always contains 3 keys
-    public ArrayList<String> letterCombinations(String digits) {
+    public ArrayList<String> letterCombinations1(String digits) {
         // Start typing your Java solution below
         // DO NOT write main() function
         char[] cur = new char[digits.length()];

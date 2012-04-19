@@ -20,5 +20,29 @@ public class LongestSubStringWithoutRepeating {
         }
         return max;
     }
+    
+    
+      //  04/18/2012 : assume s range ['a'..'z'] , we use boolean map to check if a letter appear before
+    public int lengthOfLongestSubstring1(String s) {
+        boolean[] m = new boolean[27];
+        int start = 0, max = 0;
+        for (int i=0;i<s.length();i++) {
+            int x = s.charAt(i)-'a';            
+            if (m[x]) {
+                while ( s.charAt(start)!=s.charAt(i)) {
+                    int p = s.charAt(start)-'a';
+                    m[p] = false;
+                    start++;
+                } 
+                start++;
+            } else {
+               m[x]=true; 
+            }
+            max = max<(i-start+1)? (i-start+1): max;
+            
+        }
+        return max;
+        
+    }
 
 }
