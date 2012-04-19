@@ -1,8 +1,6 @@
-package scjp.chap1;
+package SCJP6.chap1;
 
-import scjp.chap1.cert.Test1;
-
-import java.io.FileNotFoundException;
+import SCJP6.chap1.cert.Test1;
 
 class MyException extends Exception {}
 

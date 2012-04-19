@@ -1,4 +1,4 @@
-package test111;
+package test;
 
 public class ShiftString {
 

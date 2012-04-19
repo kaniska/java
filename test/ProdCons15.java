@@ -1,4 +1,4 @@
-package test111;
+package test;
 
 /*
  * Copyright (c) Ian F. Darwin, http://www.darwinsys.com/, 1996-2002.

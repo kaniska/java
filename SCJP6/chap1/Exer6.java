@@ -1,4 +1,4 @@
-package scjp.chap1;
+package SCJP6.chap1;
 
 /**
  * @author jbu

@@ -1,15 +1,17 @@
-package test111;
+package test;
+
+import java.util.Random;
 
 /**
  * @author jbu
  */
-public class MaxSumFloat {
-  public static double maxsum1(double[] x) {
+public class MaxSum {
+  public static int maxsum1(int[] x) {
     int n = x.length;
-    double max = 0;
+    int max = 0;
     for (int i = 0; i < n; i++) {
       for (int j = i; j < n; j++) {
-        double sum = 0;
+        int sum = 0;
         for (int k = i; k <= j; k++) {
           sum += x[k];
         }
@@ -19,11 +21,11 @@ public class MaxSumFloat {
     return max;
   }
 
-  public static double maxsum2a(double[] x) {
+  public static int maxsum2a(int[] x) {
     int n = x.length;
-    double max = 0;
+    int max = 0;
     for (int i = 0; i < n; i++) {
-      double sum = 0;
+      int sum = 0;
       for (int j = i; j < n; j++) {
         sum += x[j];
         max = Math.max(sum, max);
@@ -32,13 +34,13 @@ public class MaxSumFloat {
     return max;
   }
 
-  public static double maxsum2b(double[] x) {
+  public static int maxsum2b(int[] x) {
     int n = x.length;
-    double[] cumarr = new double[n];
+    int[] cumarr = new int[n];
     for (int i = 0; i < n; i++) {
       cumarr[i] = (i == 0 ? 0 : cumarr[i - 1]) + x[i];
     }
-    double max = 0, sum = 0;
+    int max = 0, sum = 0;
     for (int i = 0; i < n; i++) {
       for (int j = i; j < n; j++) {
         sum = cumarr[j] - (i == 0 ? 0 : cumarr[i - 1]);
@@ -48,7 +50,7 @@ public class MaxSumFloat {
     return max;
   }
 
-  public static double maxsum3(double[] x, int l, int u) {
+  public static int maxsum3(int[] x, int l, int u) {
     if (l > u) {
       return 0;
     }
@@ -56,7 +58,7 @@ public class MaxSumFloat {
       return Math.max(x[l], 0);
     }
     int m = (l + u) / 2;
-    double rmax = 0, lmax = 0, sum = 0;
+    int rmax = 0, lmax = 0, sum = 0;
     for (int i = m; i >= l; i--) {
       sum += x[i];
       lmax = Math.max(sum, lmax);
@@ -68,12 +70,12 @@ public class MaxSumFloat {
       rmax = Math.max(sum, rmax);
     }
 
-    double max = Math.max(maxsum3(x, l, m), maxsum3(x, m + 1, u));
+    int max = Math.max(maxsum3(x, l, m), maxsum3(x, m + 1, u));
     return Math.max(max, lmax + rmax);
   }
 
-  public static double maxsum4(double[] x) {
-    double max = 0, curmax = 0;
+  public static int maxsum4(int[] x) {
+    int max = 0, curmax = 0;
     int n = x.length;
     for (int i = 0; i < n; i++) {
       curmax = Math.max(0, curmax + x[i]);
@@ -85,11 +87,11 @@ public class MaxSumFloat {
   public static long now = 0;
 
   public static void main(String args[]) {
-    int  n = 10000;
-    double x[] = new double[n];
+    Random r = new Random();
+    int limit = 100000, n = 10000, x[] = new int[n];
     p("Array=[");
     for (int i = 0; i < n; i++) {
-      x[i] = (Math.random()-0.5d)*2d;
+      x[i] = r.nextInt(limit) - limit / 2;
       p(x[i], ";");
     }
     pl("]");

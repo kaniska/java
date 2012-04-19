@@ -1,6 +1,4 @@
-package scjp.chap1.cert;
-
-import java.io.FileNotFoundException;
+package SCJP6.chap1.cert;
 
 /**
  * @author jbu

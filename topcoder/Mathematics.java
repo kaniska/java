@@ -2,7 +2,6 @@ package topcoder;
 
 import java.util.Arrays;
 
-import static test111.Common.*;
 
 /**
  * @author jbu
@@ -40,9 +39,9 @@ public class Mathematics {
   public static void main(String args[]) {
     int n = 100000;
     boolean[] p = prime(n);
-    pl(GCD(1231297888, 419784));
+    System.out.println(GCD(1231297888, 419784));
 
-    pl(toDecimal(101011, 2));
+    System.out.println(toDecimal(101011, 2));
   }
 
 }
