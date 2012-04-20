@@ -19,17 +19,17 @@ public class Roman {
     return sb.toString();
   }
 
+
   public int romanToInt(String s) {
-    int pos = 0;
-    int num = 0;
-    for (int i = 0; i < N.length; i++) {
-      while (pos + i % 2 < s.length() && s.substring(pos, pos + i % 2 + 1).equals(ROMAN[i])) {
-        num += N[i];
-        pos += i % 2 + 1;
+    int r = 0, cur = 0;
+    for (int i = 0; i < ROMAN.length; i++) {
+//          if (cur==s.length()) break;
+      while (cur < s.length() && s.substring(cur).startsWith(ROMAN[i])) {
+        r += N[i];
+        cur += ROMAN[i].length();
       }
-      if (pos == s.length()) break;
     }
-    return num;
+    return r;
   }
 
 }
