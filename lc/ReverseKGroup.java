@@ -1,5 +1,7 @@
 package lc;
 
+import fb.ListNode;
+
 /**
  * @author jbu
  */

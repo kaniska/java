@@ -142,12 +142,14 @@ public class Recursion {
     while (true) {
       pl(String.valueOf(result));
       count++;
-      for (int p=len-1; p>=-1; p--) {
-        if (p==-1)  {return;}
-        if (number[p] == 0 || number[p] == 1 ) {
+      for (int p = len - 1; p >= -1; p--) {
+        if (p == -1) {
+          return;
+        }
+        if (number[p] == 0 || number[p] == 1) {
           continue;
         }
-        if (curPlace[p]==3) {
+        if (curPlace[p] == 3) {
           curPlace[p] = 1;
           result[p] = getCharKey(number[p], curPlace[p]);
           continue;
@@ -207,7 +209,7 @@ public class Recursion {
     p("Index=", index, " |", index >= 0 ? data[index] : "ERROR");
 
     permute("Junjie");
-    pl("Total Permutation=", count);
+    pl("Total Permutation_lc=", count);
 
     combine("wxyz");
     pl("Total Combination=", count);
