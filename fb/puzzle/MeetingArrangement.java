@@ -1,4 +1,4 @@
-package fb;
+package fb.puzzle;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -108,11 +108,11 @@ public class MeetingArrangement {
   public static void main(String args[]) {
     List<Segment> list = new ArrayList<Segment>();
     Random r = new Random();
-    for (int i=0;i<10;i++) {
-      int x = 1+r.nextInt(31);
-      int d = 1+r.nextInt(10);
-      if (x+d>31) continue;
-      list.add(new Segment(x, x+d));
+    for (int i = 0; i < 10; i++) {
+      int x = 1 + r.nextInt(31);
+      int d = 1 + r.nextInt(10);
+      if (x + d > 31) continue;
+      list.add(new Segment(x, x + d));
     }
     System.out.println(list);
 
