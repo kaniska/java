@@ -20,7 +20,7 @@ public class StrStr {
   }
 
 
-  public String strStr(String haystack, String needle) {
+  public String strStr1(String haystack, String needle) {
     int i = 0, j = 0;
     if (haystack == null || needle == null) return null;
     while (i < haystack.length() - needle.length() + 1) {

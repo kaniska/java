@@ -7,35 +7,29 @@ import java.util.Arrays;
  * @author jbu
  */
 public class SlidingWindowMax {
-  public static void main(String args[]) {
-    getWindowMax(new int[]{2,3,4,2,6,7,8,2,4,1,2,3},3 );
-  }
-
-
-  public static int[] getWindowMax(int[] a, int w) {
-    int[] b = new int[a.length - w + 1];
-
-    ArrayDeque<Integer> q = new ArrayDeque<Integer>();
+  public int[] slidingWindowMax(int[] a, int w) {
+    int len = a.length;
+    int[] m = new int[len - w + 1];
+    ArrayDeque<Integer> deque = new ArrayDeque<Integer>();
     for (int i = 0; i < w; i++) {
-      while (!q.isEmpty() && a[q.peekLast()] <= a[i]) {
-        q.removeLast();
-      }
-      q.addLast(i);
+      while (!deque.isEmpty() && a[deque.peekLast()] <= a[i]) deque.removeLast();
+      deque.addLast(i);
     }
+    m[0] = deque.removeFirst();
 
-    b[0] = a[q.peekFirst()];
-    for (int i = w; i < a.length; i++) {
-      while (!q.isEmpty() && q.peekFirst() <= i - w) {
-        q.removeFirst();
-      }
-      while (!q.isEmpty() && a[q.peekLast()] <= a[i]) {
-        q.removeLast();
-      }
-      q.addLast(i);
-      b[i - w + 1] = a[q.peekFirst()];
+    for (int i = w; i < len; i++) {
+      while (!deque.isEmpty() && deque.peekFirst() <= i - w) deque.removeFirst();
+      while (!deque.isEmpty() && a[deque.peekLast()] < a[i]) deque.removeLast();
+      deque.addLast(i);
+      m[i - w + 1] = deque.peekFirst();
     }
-
-    System.out.println(Arrays.toString(b));
-    return b;
+    return m;
   }
+
+
+  public static void main(String args[]) {
+    new SlidingWindowMax().slidingWindowMax(new int[]{2, 3, 4, 2, 6, 7, 8, 2, 4, 1, 2, 3}, 3);
+  }
+
+
 }

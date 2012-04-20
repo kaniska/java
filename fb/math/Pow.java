@@ -1,6 +1,6 @@
 package fb.math;
 
-public class Solution {
+public class Pow {
   public double pow(double x, int n) {
     if (x == 0 && n < 0) throw new IllegalArgumentException("AAA");
     if (n == 0) return 1.0;

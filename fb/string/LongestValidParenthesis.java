@@ -1,5 +1,7 @@
 package fb.string;
 
+import java.util.*;
+
 /**
  * @author jbu
  */
