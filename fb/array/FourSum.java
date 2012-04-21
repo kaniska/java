@@ -7,6 +7,11 @@ import java.util.*;
  * @author jbu
  */
 public class FourSum {
+  public static void main(String[] args) {
+    FourSum f = new FourSum();
+    f.fourSum(new int[]{-1, 0, 1, 2, -1, -4}, -1);
+  }
+
   /**
    * Back fill, exponential , similar to brute force in this case ,
    * Since we specially need four sum, this solution does not specifically address that
@@ -15,7 +20,7 @@ public class FourSum {
    * @param target
    * @return
    */
-  public ArrayList<ArrayList<Integer>> fourSum(int[] num, int target) {
+  public ArrayList<ArrayList<Integer>> fourSum_brute_force(int[] num, int target) {
     Arrays.sort(num);
     HashSet<ArrayList<Integer>> result = new HashSet<ArrayList<Integer>>();
     doCheck(num, target, 0, new ArrayList<Integer>(), result);
@@ -38,6 +43,43 @@ public class FourSum {
     }
   }
 
+  /**
+   * @param num
+   * @param target
+   * @return
+   * @since 04/20/2012  Using a Tuple class and sort the two sum array first before binary search
+   *        OK, it's still not working.
+   *        It comes out that Binary Search has  no guarantee which one will be found
+   *        If the array contains multiple elements equal to the specified object
+   */
+  public ArrayList<ArrayList<Integer>> fourSum(int[] num, int target) {
+    Set<ArrayList<Integer>> result = new HashSet<ArrayList<Integer>>();
+
+    int n = num.length;
+    if (n == 0) return new ArrayList<ArrayList<Integer>>(result);
+    Tuple[] p = new Tuple[n * (n - 1) / 2];
+    int k = 0;
+    for (int i = 0; i < n - 1; i++)
+      for (int j = i + 1; j < n; j++) {
+        p[k++] = new Tuple(num[i] + num[j], i, j);
+      }
+    Arrays.sort(p);
+    for (int i = 0; i < p.length; i++) {
+      int j = i;
+      while (true) {
+        j = Arrays.binarySearch(p, j + 1, p.length, new Tuple(target - p[i].val, 0, 0));
+        if (p[i].j < p[j].i) {
+          ArrayList<Integer> one = new ArrayList<Integer>();
+          one.add(num[p[i].i]);
+          one.add(num[p[i].j]);
+          one.add(num[p[j].i]);
+          one.add(num[p[j].j]);
+          result.add(one);
+        }
+      }
+    }
+    return new ArrayList<ArrayList<Integer>>(result);
+  }
 
   /**
    * this seems fail some of the test cases in lc
@@ -88,6 +130,7 @@ public class FourSum {
    * @since 04/20/2012
    *        Also tried using HashMap to look up , but seems not working
    *        Since two sum could have duplicates
+   *        OK, Now it's working, however it still time out on large test cases (which is similar to the O(n^2*n) simple linear search of the p array solution
    */
   public ArrayList<ArrayList<Integer>> fourSum_hash(int[] num, int target) {
     int n = num.length;
@@ -102,22 +145,39 @@ public class FourSum {
         ix2[k++] = j;
       }
     Set<ArrayList<Integer>> result = new HashSet<ArrayList<Integer>>();
-    Map<Integer, Integer> s = new HashMap<Integer, Integer>();
+    Map<Integer, ArrayList<Integer>> s = new HashMap<Integer, ArrayList<Integer>>();
     for (int i = 0; i < p.length; i++) {
       if (s.containsKey(target - p[i])) {
-        int j = s.get(target - p[i]);
-        if (ix2[j] < ix1[i]) {
-          ArrayList<Integer> one = new ArrayList<Integer>();
-          one.add(num[ix1[j]]);
-          one.add(num[ix2[j]]);
-          one.add(num[ix1[i]]);
-          one.add(num[ix2[i]]);
-          result.add(one);
-        }
+        for (int j : s.get(target - p[i]))
+          if (ix2[j] < ix1[i]) {
+            ArrayList<Integer> one = new ArrayList<Integer>();
+            one.add(num[ix1[j]]);
+            one.add(num[ix2[j]]);
+            one.add(num[ix1[i]]);
+            one.add(num[ix2[i]]);
+            result.add(one);
+          }
+      } else if (s.containsKey(p[i])) {
+        s.get(p[i]).add(i);
       } else {
-        s.put(p[i], i);
+        s.put(p[i], new ArrayList<Integer>(Arrays.asList(i)));
       }
     }
     return new ArrayList<ArrayList<Integer>>(result);
+  }
+}
+
+
+class Tuple implements Comparable<Tuple> {
+  int val, i, j; // i, j is the original index
+
+  public Tuple(int val, int i, int j) {
+    this.val = val;
+    this.i = i;
+    this.j = j;
+  }
+
+  public int compareTo(Tuple t) {
+    return this.val - t.val;
   }
 }

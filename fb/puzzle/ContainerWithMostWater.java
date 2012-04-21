@@ -15,6 +15,28 @@ public class ContainerWithMostWater {
     System.out.println(new ContainerWithMostWater().maxArea(new int[]{1, 2, 1}));
   }
 
+  public int maxArea0421(int[] height) {
+    int n = height.length;
+    if (n <= 1) return 0;
+    int i = 0, j = n - 1;
+    int hi = height[i], hj = height[j];
+    int max = Math.min(hi, hj) * (j - i), cur;
+    while (i < j) {
+      if (hi < hj) {
+        while (i < j && height[i] <= hi) i++;
+        if (i == j) break;
+        hi = height[i];
+      } else {
+        while (i < j && height[j] <= hj) j--;
+        if (i == j) break;
+        hj = height[j];
+      }
+      cur = Math.min(hi, hj) * (j - i);
+      max = max < cur ? cur : max;
+    }
+    return max;
+  }
+
   private int getArea(int[] h, int i, int j) {
     return (j - i) * Math.min(h[i], h[j]);
   }
