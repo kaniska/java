@@ -1,8 +1,7 @@
 package fb.array;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
+
+import java.util.*;
 
 /**
  * @author jbu
@@ -37,5 +36,88 @@ public class FourSum {
         current.remove(current.size() - 1);
       }
     }
+  }
+
+
+  /**
+   * this seems fail some of the test cases in lc
+   * OK, I see the problem is because the two sum array is NOT sorted even we sorted the original array
+   *
+   * @param num
+   * @param target
+   * @return
+   * @since 04/20/2012
+   */
+  public ArrayList<ArrayList<Integer>> fourSum_binarySearch(int[] num, int target) {
+    int n = num.length;
+    Arrays.sort(num);
+    int[] p = new int[n * (n - 1) / 2];
+    int ix1[] = new int[p.length], ix2[] = new int[p.length];
+    int k = 0;
+    for (int i = 0; i < n - 1; i++)
+      for (int j = i + 1; j < n; j++) {
+        p[k] = num[i] + num[j];
+        ix1[k] = i;
+        ix2[k++] = j;
+      }
+    Set<ArrayList<Integer>> result = new HashSet<ArrayList<Integer>>();
+    Set<Integer> s = new HashSet<Integer>();
+    for (int i = 0; i < p.length; i++) {
+      int j = i;
+      while (true) {
+        j = Arrays.binarySearch(p, j + 1, p.length, target - p[i]);
+        if (j < 0) break;
+        if (ix2[i] < ix1[j]) {
+          ArrayList<Integer> one = new ArrayList<Integer>();
+          one.add(num[ix1[i]]);
+          one.add(num[ix2[i]]);
+          one.add(num[ix1[j]]);
+          one.add(num[ix2[j]]);
+          result.add(one);
+        }
+      }
+    }
+    return new ArrayList<ArrayList<Integer>>(result);
+  }
+
+
+  /**
+   * @param num
+   * @param target
+   * @return
+   * @since 04/20/2012
+   *        Also tried using HashMap to look up , but seems not working
+   *        Since two sum could have duplicates
+   */
+  public ArrayList<ArrayList<Integer>> fourSum_hash(int[] num, int target) {
+    int n = num.length;
+    Arrays.sort(num);
+    int[] p = new int[n * (n - 1) / 2];
+    int ix1[] = new int[p.length], ix2[] = new int[p.length];
+    int k = 0;
+    for (int i = 0; i < n - 1; i++)
+      for (int j = i + 1; j < n; j++) {
+        p[k] = num[i] + num[j];
+        ix1[k] = i;
+        ix2[k++] = j;
+      }
+    Set<ArrayList<Integer>> result = new HashSet<ArrayList<Integer>>();
+    Map<Integer, Integer> s = new HashMap<Integer, Integer>();
+    for (int i = 0; i < p.length; i++) {
+      if (s.containsKey(target - p[i])) {
+        int j = s.get(target - p[i]);
+        if (ix2[j] < ix1[i]) {
+          ArrayList<Integer> one = new ArrayList<Integer>();
+          one.add(num[ix1[j]]);
+          one.add(num[ix2[j]]);
+          one.add(num[ix1[i]]);
+          one.add(num[ix2[i]]);
+          result.add(one);
+        }
+      } else {
+        s.put(p[i], i);
+      }
+    }
+    return new ArrayList<ArrayList<Integer>>(result);
   }
 }
