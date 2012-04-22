@@ -19,11 +19,8 @@ package fb.math;
  * @author jbu
  */
 public class Multiply {
-
-
   public String multiply(String num1, String num2) {
     int len1 = num1.length(), len2 = num2.length();
-
     char[] r = new char[len1 + len2];
     for (int i = 0; i < r.length; i++) r[i] = '0';
     for (int i = len1 - 1; i >= 0; i--) {
@@ -33,7 +30,7 @@ public class Multiply {
         r[1 + i + j] = (char) (x % 10 + '0');
         carry = x / 10;
       }
-      r[i + j + 1] = (char) (carry + '0');
+      r[i] = (char) (carry + '0');
     }
     int s = 0;
     while (s < r.length && r[s] == '0') s++;
