@@ -6,12 +6,10 @@ import java.util.*;
  * @author jbu
  */
 public class SubstringWithConcatenationWords {
-
   public ArrayList<Integer> findSubstring(String S, String[] L) {
-    int len = S.length();
+    int n = S.length();
     int m = L[0].length();
     int l = L.length;
-
     Map<String, Integer> needFind = new HashMap<String, Integer>();
     Map<String, Integer> hasFound = new HashMap<String, Integer>();
     for (int i = 0; i < l; i++) {
@@ -21,7 +19,7 @@ public class SubstringWithConcatenationWords {
     ArrayList<Integer> r = new ArrayList<Integer>();
     int j;
     String w;
-    for (int i = 0; i < len - l * m + 1; i++) {
+    for (int i = 0; i < n - l * m + 1; i++) {
       w = S.substring(i, i + m);
       if (needFind.containsKey(w)) {
         hasFound.clear();
@@ -35,11 +33,7 @@ public class SubstringWithConcatenationWords {
         }
         if (j == l) r.add(i);
       }
-
     }
-
     return r;
-
   }
-
 }
