@@ -68,10 +68,7 @@ public class LongestPalindrome {
 
   private String exploreAround(String s, int i, int j) {
     int len = s.length();
-    while (i >= 0 && j < len) {
-      if (s.charAt(i) != s.charAt(j)) {
-        break;
-      }
+    while (i >= 0 && j < len && s.charAt(i) != s.charAt(j)) {
       i--;
       j++;
     }

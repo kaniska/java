@@ -13,44 +13,26 @@ public class SolveNQueenTotal {
   }
 
   public int totalNQueens(int n) {
-    ArrayList<String[]> result = new ArrayList<String[]>();
     int[] current = new int[n];
-//        Arrays.fill(index,-1);
-    solve(current, result, 0);
-    return result.size();
+    return solve(0, n, current);
   }
 
-  private void solve(int[] current, ArrayList<String[]> result, int row) {
-    int n = current.length;
-    if (row == n) {
-      result.add(getNQueenString(current));
-      return;
-    }
+  int solve(int row, int n, int[] current) {
+    if (row == n) return 1;
+    int total = 0;
     for (int i = 0; i < n; i++) {
-      if (valid(current, row, i)) {
+      if (isValid(current, row, i)) {
         current[row] = i;
-        solve(current, result, row + 1);
+        total += solve(row + 1, n, current);
       }
     }
+    return total;
   }
 
-  private boolean valid(int[] current, int row, int col) {
+  boolean isValid(int[] current, int row, int pos) {
     for (int i = 0; i < row; i++) {
-      if (current[i] == col) return false;
-      if (Math.abs(row - i) == Math.abs(col - current[i])) return false;
+      if (current[i] == pos || Math.abs(current[i] - pos) == (row - i)) return false;
     }
     return true;
-  }
-
-  private String[] getNQueenString(int[] current) {
-    int n = current.length;
-    String[] r = new String[n];
-    char[] one = new char[n];
-    for (int i = 0; i < n; i++) {
-      Arrays.fill(one, '.');
-      one[current[i]] = 'Q';
-      r[i] = new String(one);
-    }
-    return r;
   }
 }

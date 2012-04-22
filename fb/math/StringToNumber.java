@@ -3,8 +3,31 @@ package fb.math;
 /**
  * @author jbu
  */
-public class Convert {
-  public static float parseFloat(String s) {
+public class StringToNumber {
+
+  public int atoi(String str) {
+    // ^\\s+[+-]?\\d+\\s+$    overflow?
+    // ignore illegal char after a valid number?
+    // OK. Hard to handle overflow
+    // WHat if it's MIN_VALUE,
+    // or > MAX_VALUE OR < MIN_VALUE
+    int n = str.length(), i = 0;
+    while (i < n && (str.charAt(i) == ' ' || str.charAt(i) == '\t')) i++;
+    boolean isNeg = false;
+    if (i < n && (str.charAt(i) == '+' || str.charAt(i) == '-'))
+      isNeg = str.charAt(i++) == '-';
+    int num = 0;
+    while (i < n && str.charAt(i) <= '9' && str.charAt(i) >= '0') {
+      // use x for overflow check
+      int x = str.charAt(i) - '0';
+      if ((Integer.MAX_VALUE - x) / 10 < num) return isNeg ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+      num = num * 10 + x;
+      i++;
+    }
+    return isNeg ? -num : num;
+  }
+
+  public static float atof(String s) {
     boolean isNeg = false;
     boolean afterPoint = false;
     long divider = 10;
@@ -41,19 +64,19 @@ public class Convert {
           if (exp) {
             power = power * 10 + (c - '0');
           } else if (afterPoint) {
-            f += (float)(c - '0') / divider;
+            f += (float) (c - '0') / divider;
             divider *= 10;
           } else {
             f = f * 10 + (c - '0');
           }
           break;
         default:
-         throw new IllegalArgumentException("Wrong number" + s);
+          throw new IllegalArgumentException("Wrong number" + s);
       }
     }
     while (power > 0) {
       f *= 10;
-      if (f>Float.MAX_VALUE) throw new IllegalArgumentException("Wrong number" + s);
+      if (f > Float.MAX_VALUE) throw new IllegalArgumentException("Wrong number" + s);
       power--;
     }
     return isNeg ? -f : f;
@@ -61,12 +84,12 @@ public class Convert {
   }
 
   public static void main(String args[]) {
-    String[] s = {"123123e1213","-123123", "099081", "212.21", "-21.2218302", "122.333e21", "-12123.33e5", "--123a3", "12a", "123.123.2", "12.22e123.3"};
+    String[] s = {"123123e1213", "-123123", "099081", "212.21", "-21.2218302", "122.333e21", "-12123.33e5", "--123a3", "12a", "123.123.2", "12.22e123.3"};
     for (String s1 : s) {
       try {
-      System.out.println(s1 + "=" + parseFloat(s1));
+        System.out.println(s1 + "=" + atof(s1));
       } catch (Exception e) {
-        System.out.println("Exception="+e.getMessage());
+        System.out.println("Exception=" + e.getMessage());
       }
     }
   }
