@@ -2,8 +2,13 @@ package fb;
 
 import java.util.*;
 
-public class MergeInterval {
-  public ArrayList<Interval> merge(ArrayList<Interval> intervals) {
+/**
+ * @author: mindpower
+ * @created: 4/21/12-7:57 PM
+ */
+public class InsertInterval {
+  public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
+    intervals.add(newInterval);
     Point[] points = new Point[intervals.size() * 2];
     int k = 0;
     for (int i = 0; i < intervals.size(); i++) {
