@@ -1,6 +1,4 @@
-package fb;
-
-import java.util.*;
+package fb.list;
 
 /**
  * @author: mindpower

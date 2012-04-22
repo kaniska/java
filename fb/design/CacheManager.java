@@ -1,4 +1,4 @@
-package fb;
+package fb.design;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,20 +12,18 @@ import java.util.Map;
 public class CacheManager {
   public static void main(String args[]) {
     LRUCache<Integer, Integer> cs = new LRUCache<Integer, Integer>(3);
-
     Integer[][] data = new Integer[][]{ //
-      // {0:put, 1:get}, {result}
-      {0, 1}, {1}, // put 1 - add
-      {0, 2}, {2, 1},// put 2 - add
-      {0, 3}, {3, 2, 1},// put 3 - add
-      {0, 2}, {2, 3, 1},// put 2 - refresh, data changed
-      {1, 1}, {1, 2, 3},// get 1 - get
-      {0, 3}, {3, 1, 2},// put 3 - refresh, data changed
-      {1, 4}, {3, 1, 2},// get 4 - miss
-      {0, 4}, {4, 3, 1},// put 4 - 2 is gone
-      {0, 0}, {0, 4, 3},// put 0 - 1 is gone
+        // {0:put, 1:get}, {result}
+        {0, 1}, {1}, // put 1 - add
+        {0, 2}, {2, 1},// put 2 - add
+        {0, 3}, {3, 2, 1},// put 3 - add
+        {0, 2}, {2, 3, 1},// put 2 - refresh, data changed
+        {1, 1}, {1, 2, 3},// get 1 - get
+        {0, 3}, {3, 1, 2},// put 3 - refresh, data changed
+        {1, 4}, {3, 1, 2},// get 4 - miss
+        {0, 4}, {4, 3, 1},// put 4 - 2 is gone
+        {0, 0}, {0, 4, 3},// put 0 - 1 is gone
     };
-
     for (int i = 0; i < data.length; i += 2) {
       int act = data[i][0];
       int d = data[i][1];
@@ -35,9 +33,9 @@ public class CacheManager {
         cs.put(d, d);
       }
       if (cs.getKeys().equals(Arrays.asList(data[i + 1]))) {
-        System.out.println("CORRECT: "+cs.getKeys()+"  /  " +Arrays.asList(data[i + 1]));
+        System.out.println("CORRECT: " + cs.getKeys() + "  /  " + Arrays.asList(data[i + 1]));
       } else {
-        System.out.println("WRONG: "+cs.getKeys()+"  /  " +Arrays.asList(data[i + 1]));
+        System.out.println("WRONG: " + cs.getKeys() + "  /  " + Arrays.asList(data[i + 1]));
       }
     }
   }
@@ -152,7 +150,5 @@ class LRUCache<K, V> implements Cache<K, V> {
       n.next = head;
       head = n;
     }
-
   }
-
 }

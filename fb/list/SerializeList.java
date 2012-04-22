@@ -1,4 +1,4 @@
-package fb.interview;
+package fb.list;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * @author jbu
  */
-public class SerializeList implements Serializable{
+public class SerializeList implements Serializable {
   private int[] intArray;
   private Integer[] iArray;
   private String[] sArray;
@@ -35,18 +35,16 @@ public class SerializeList implements Serializable{
 
   public static void main(String args[]) {
     SerializeList s = new SerializeList();
-    s.intArray = new int[] {1, 23, 324};
-    s.iArray = new Integer[] {1, 899234, 324};
-    s.sArray = new String[] {"Hello", "World"};
+    s.intArray = new int[]{1, 23, 324};
+    s.iArray = new Integer[]{1, 899234, 324};
+    s.sArray = new String[]{"Hello", "World"};
     s.list = Arrays.asList("Good", "Morning");
-
     try {
       ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("list.ser"));
       oos.writeObject(s);
       oos.close();
-      s.intArray = new int[]{7,8};
+      s.intArray = new int[]{7, 8};
       System.out.println(s);
-
       ObjectInputStream ois = new ObjectInputStream(new FileInputStream("list.ser"));
       SerializeList l2 = (SerializeList) ois.readObject();
       System.out.println(l2);
@@ -55,9 +53,5 @@ public class SerializeList implements Serializable{
     } catch (ClassNotFoundException e) {
       e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
     }
-
   }
-
-
-
 }

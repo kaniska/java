@@ -1,4 +1,4 @@
-package fb.interview;
+package fb.string;
 
 import java.io.Console;
 import java.util.regex.Matcher;
@@ -13,11 +13,9 @@ public class TestRegex {
   public static void main(String args[]) {
     Console c = System.console();
     String s;
-    while (!(s=c.readLine()).equals("")) {
+    while (!(s = c.readLine()).equals("")) {
       Matcher m = p.matcher(s);
       System.out.println(m.matches());
     }
   }
-
-
 }

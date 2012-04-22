@@ -1,4 +1,4 @@
-package fb;
+package fb.list;
 
 import java.util.*;
 

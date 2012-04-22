@@ -1,4 +1,4 @@
-package fb.interview;
+package fb.math;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -18,7 +18,6 @@ public class String2Float {
     if (!isValid(s)) {
       throw new NumberFormatException("Invalid Number=" + s);
     }
-
     float f = 0;
     int exp = 0;
     char[] a = s.toCharArray();
@@ -27,7 +26,6 @@ public class String2Float {
     boolean positiveE = true;
     boolean floatingPoint = false;
     float floatingFactor = 0.1f;
-
     for (char c : a) {
       switch (c) {
         case '+':
@@ -66,12 +64,11 @@ public class String2Float {
           }
       }
     }
-
-    while (exp>0) {
-      f = positiveE? f*10: f/10;
+    while (exp > 0) {
+      f = positiveE ? f * 10 : f / 10;
       exp--;
     }
-    f = positiveNum? f: f*(-1);
+    f = positiveNum ? f : f * (-1);
     return f;
   }
 
@@ -83,15 +80,15 @@ public class String2Float {
     System.out.println(sb.toString());
   }
 
- public static float string2float(String s, boolean exception) throws NumberFormatException {
-   if (exception) return string2float(s);
-   try {
-     return string2float(s);
-   } catch (NumberFormatException e) {
-     p(e);
-   }
-   return 0;
- }
+  public static float string2float(String s, boolean exception) throws NumberFormatException {
+    if (exception) return string2float(s);
+    try {
+      return string2float(s);
+    } catch (NumberFormatException e) {
+      p(e);
+    }
+    return 0;
+  }
 
   public static void main(String args[]) {
     p(string2float("SS", false));
@@ -99,8 +96,6 @@ public class String2Float {
     p(string2float("12312456.32424", false));
     p(string2float("-123123.e", false));
     p(string2float("12123.e-1", false));
-    p(string2float("123123.43545e12",false));
-
+    p(string2float("123123.43545e12", false));
   }
-
 }
