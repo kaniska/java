@@ -18,27 +18,27 @@ public class SubstringWithConcatenationWords {
       if (!needFind.containsKey(L[i])) needFind.put(L[i], 1);
       else needFind.put(L[i], needFind.get(L[i]) + 1);
     }
-    ArrayList<Integer> result = new ArrayList<Integer>();
+    ArrayList<Integer> r = new ArrayList<Integer>();
     int j;
-    String sub;
+    String w;
     for (int i = 0; i < len - l * m + 1; i++) {
-      sub = S.substring(i, i + m);
-      if (needFind.containsKey(sub)) {
+      w = S.substring(i, i + m);
+      if (needFind.containsKey(w)) {
         hasFound.clear();
-        hasFound.put(sub, 1);
+        hasFound.put(w, 1);
         for (j = 1; j < l; j++) {
-          sub = S.substring(i + j * m, i + (j + 1) * m);
-          if (!needFind.containsKey(sub)) break;
-          Integer v = hasFound.get(sub);
-          hasFound.put(sub, v == null ? 1 : v + 1);
-          if (hasFound.get(sub) > needFind.get(sub)) break;
+          w = S.substring(i + j * m, i + (j + 1) * m);
+          if (!needFind.containsKey(w)) break;
+          Integer v = hasFound.get(w);
+          hasFound.put(w, v == null ? 1 : v + 1);
+          if (hasFound.get(w) > needFind.get(w)) break;
         }
-        if (j == l) result.add(i);
+        if (j == l) r.add(i);
       }
 
     }
 
-    return result;
+    return r;
 
   }
 
