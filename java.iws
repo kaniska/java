@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4515f29-27fd-4332-95a6-d4a8833c9049" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/array/FourSum.java" afterPath="$PROJECT_DIR$/fb/array/FourSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/math/AddBinary.java" afterPath="$PROJECT_DIR$/fb/math/AddBinary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/string/Anagrams.java" afterPath="$PROJECT_DIR$/fb/string/Anagrams.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/permutation/Combinations.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fb/math/BigInteger.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/math/CountAndSay.java" afterPath="$PROJECT_DIR$/fb/math/CountAndSay.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/string/GenerateParentheses.java" afterPath="$PROJECT_DIR$/fb/string/GenerateParentheses.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/string/StrStr.java" afterPath="$PROJECT_DIR$/fb/string/StrStr.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java.iws" afterPath="$PROJECT_DIR$/java.iws" />
     </list>
     <ignored path="java.iws" />
@@ -63,23 +65,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FourSum.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/array/FourSum.java">
+      <file leaf-file-name="FindMissingNumber.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/math/FindMissingNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="172" selection-start="3911" selection-end="3911" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#998#1018#0" expanded="true" />
-                <element signature="e#1145#1165#0" expanded="true" />
-                <element signature="e#1251#1275#0" expanded="true" />
-              </folding>
+            <state line="21" column="13" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddBinary.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/math/AddBinary.java">
+      <file leaf-file-name="FindMissingPositive.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/array/FindMissingPositive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="174" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0">
+            <state line="29" column="178" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenerateParentheses.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fb/string/GenerateParentheses.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="71" selection-start="251" selection-end="251" vertical-scroll-proportion="0.30139104">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StrStr.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/string/StrStr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="25" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -88,70 +104,52 @@
       <file leaf-file-name="AddTwoNumbers.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fb/math/AddTwoNumbers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="177" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
+            <state line="4" column="13" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Anagrams.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/string/Anagrams.java">
+      <file leaf-file-name="Divide.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/math/Divide.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="179" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+            <state line="5" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClimbStairs.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/dp/ClimbStairs.java">
+      <file leaf-file-name="DivideTwoInteger.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/math/DivideTwoInteger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="176" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+            <state line="33" column="4" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Combination.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fb/permutation/Combination.java">
+      <file leaf-file-name="Multiplication.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/math/Multiplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="38" selection-end="38" vertical-scroll-proportion="0.04636785">
+            <state line="5" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CombinationK.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/permutation/CombinationK.java">
+      <file leaf-file-name="Multiply.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/math/Multiply.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+            <state line="8" column="173" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CombinationSum.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/permutation/CombinationSum.java">
+      <file leaf-file-name="Overflow.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/math/Overflow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="176" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Jump4.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/dp/Jump4.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MinimumPathSum.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/dp/MinimumPathSum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+            <state line="5" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -170,9 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/cp/Dependency.java" />
-        <option value="$PROJECT_DIR$/cp/SystemDependency.java" />
-        <option value="$PROJECT_DIR$/cp/install2.txt" />
         <option value="$PROJECT_DIR$/cp/CommandProcessor.java" />
         <option value="$PROJECT_DIR$/pattern/CommandProcessor.java" />
         <option value="$PROJECT_DIR$/src/Tries.java" />
@@ -183,6 +178,12 @@
         <option value="$PROJECT_DIR$/fb/array/FourSum.java" />
         <option value="$PROJECT_DIR$/fb/math/AddBinary.java" />
         <option value="$PROJECT_DIR$/fb/string/Anagrams.java" />
+        <option value="$PROJECT_DIR$/fb/permutation/Combinations.java" />
+        <option value="$PROJECT_DIR$/fb/math/CountAndSay.java" />
+        <option value="$PROJECT_DIR$/fb/math/DivideTwoInteger.java" />
+        <option value="$PROJECT_DIR$/fb/math/FindMissingNumber.java" />
+        <option value="$PROJECT_DIR$/fb/string/GenerateParentheses.java" />
+        <option value="$PROJECT_DIR$/fb/string/StrStr.java" />
       </list>
     </option>
   </component>
@@ -268,24 +269,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="string" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IntelliJ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="permutation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -640,17 +623,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="965" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.49754903" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3992891" sideWeight="0.716299" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17535545" sideWeight="0.39338234" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17535545" sideWeight="0.49816176" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13033175" sideWeight="0.49754903" order="7" side_tool="false" content_ui="tabs" />
@@ -660,13 +644,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13909313" sideWeight="0.82464457" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17535545" sideWeight="0.6023284" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15992647" sideWeight="0.82464457" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17535545" sideWeight="0.6023284" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -730,122 +713,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fb/math/Power.java">
+    <entry file="file://$PROJECT_DIR$/fb/math/Roman.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="29" selection-start="310" selection-end="310" vertical-scroll-proportion="0.31390134">
+        <state line="5" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/array/ThreeSum.java">
+    <entry file="file://$PROJECT_DIR$/fb/math/Root.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="14" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#824#844#0" expanded="true" />
-            <element signature="e#1359#1368#0" expanded="true" />
-            <element signature="e#1585#1605#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fb/array/ThreeSumClosest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
+        <state line="5" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/dp/CanJump.java">
+    <entry file="file://$PROJECT_DIR$/fb/math/String2Float.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+        <state line="8" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/dp/EditDistance.java">
+    <entry file="file://$PROJECT_DIR$/fb/math/ValidNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+        <state line="8" column="13" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/dp/Jump3.java">
+    <entry file="file://$PROJECT_DIR$/fb/math/isPalindromeNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+        <state line="6" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/dp/Jump4.java">
+    <entry file="file://$PROJECT_DIR$/fb/math/BinaryAdd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fb/dp/MinimumPathSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fb/array/FourSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="172" selection-start="3911" selection-end="3911" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#998#1018#0" expanded="true" />
-            <element signature="e#1145#1165#0" expanded="true" />
-            <element signature="e#1251#1275#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fb/math/AddBinary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="174" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0">
+        <state line="5" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fb/math/AddTwoNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="177" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
+        <state line="4" column="13" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/string/Anagrams.java">
+    <entry file="file://$PROJECT_DIR$/fb/math/Divide.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="179" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+        <state line="5" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/dp/ClimbStairs.java">
+    <entry file="file://$PROJECT_DIR$/fb/math/Overflow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="176" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+        <state line="5" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/permutation/CombinationSum.java">
+    <entry file="file://$PROJECT_DIR$/fb/math/Multiplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="176" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+        <state line="5" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/permutation/CombinationK.java">
+    <entry file="file://$PROJECT_DIR$/fb/math/Multiply.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+        <state line="8" column="173" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/permutation/Combination.java">
+    <entry file="file://$PROJECT_DIR$/fb/math/DivideTwoInteger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="38" selection-end="38" vertical-scroll-proportion="0.04636785">
+        <state line="33" column="4" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/math/FindMissingNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="13" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/array/FindMissingPositive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="178" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/string/StrStr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="25" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/string/GenerateParentheses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="71" selection-start="251" selection-end="251" vertical-scroll-proportion="0.30139104">
           <folding />
         </state>
       </provider>
