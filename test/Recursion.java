@@ -209,7 +209,7 @@ public class Recursion {
     p("Index=", index, " |", index >= 0 ? data[index] : "ERROR");
 
     permute("Junjie");
-    pl("Total Permutation_lc=", count);
+    pl("Total Permutation=", count);
 
     combine("wxyz");
     pl("Total Combination=", count);

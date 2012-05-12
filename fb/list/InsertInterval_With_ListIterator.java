@@ -27,7 +27,6 @@ import java.util.*;
 public class InsertInterval_With_ListIterator {
   public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
     ListIterator<Interval> it = intervals.listIterator();
-    boolean inserted = false;
     while (it.hasNext()) {
       Interval cur = it.next();
       if (cur.end < newInterval.start) {
@@ -36,8 +35,7 @@ public class InsertInterval_With_ListIterator {
       if (cur.start > newInterval.end) {
         it.previous();
         it.add(newInterval);
-        inserted = true;
-        break;
+        return intervals;
       }
       else {
         newInterval.start = Math.min(newInterval.start, cur.start);
@@ -45,9 +43,7 @@ public class InsertInterval_With_ListIterator {
         it.remove();
       }
     }
-    if (!inserted) {
-      it.add(newInterval);
-    }
+    it.add(newInterval);
     return intervals;
   }
 }

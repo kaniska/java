@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @author: mindpower
  * @since: 5/12/12-9:47 AM
  */
-public class Combinations {
+public class CombinationKInts {
   public ArrayList<ArrayList<Integer>> combine(int n, int k) {
     ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
     doCombine(n, k, 0, 1, new ArrayList<Integer>(), result);

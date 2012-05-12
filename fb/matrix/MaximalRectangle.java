@@ -1,5 +1,7 @@
 package fb.matrix;
 
+import fb.puzzle.LargestRectangle;
+
 import java.util.*;
 
 /**
@@ -17,6 +19,7 @@ public class MaximalRectangle {
     int[] height = new int[n];
     int max = 0;
     System.out.println("Height == ");
+    LargestRectangle largestRectangle = new LargestRectangle();
     for (int i = 0; i < m; i++) {
       for (int j = 0; j < n; j++) {
         height[j] = matrix[i][j] == '1' ? height[j] + 1 : 0;
@@ -26,7 +29,7 @@ public class MaximalRectangle {
       if (i == 6) {
         System.out.println("AAA");
       }
-      int curMax = getHistMax(height);
+      int curMax = largestRectangle.largestRectangleArea(height);
       if (curMax > max) {
         max = curMax;
       }
@@ -34,34 +37,6 @@ public class MaximalRectangle {
     return max;
   }
 
-  int getHistMax(int[] height) {
-    Deque<Integer> s = new ArrayDeque<Integer>();
-    int[] lsize = new int[height.length];
-    int[] rsize = new int[height.length];
-    for (int i = 0; i < height.length; i++) {
-      while (!s.isEmpty() && height[s.peek()] >= height[i]) {
-        s.pop();
-      }
-      lsize[i] = s.isEmpty() ? i : (i - s.peek() - 1);
-      s.push(i);
-    }
-    s.clear();
-    for (int i = height.length - 1; i >= 0; i--) {
-      while (!s.isEmpty() && height[s.peek()] >= height[i]) {
-        s.pop();
-      }
-      rsize[i] = s.isEmpty() ? (height.length - i - 1) : (s.peek() - i - 1);
-      s.push(i);
-    }
-    int max = 0;
-    for (int i = 0; i < height.length; i++) {
-      int cur = height[i] * (1 + lsize[i] + rsize[i]);
-      if (cur > max) {
-        max = cur;
-      }
-    }
-    return max;
-  }
 
   public int maximalRectangle(String[] matrix) {
     if (matrix.length == 0) {

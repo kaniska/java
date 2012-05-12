@@ -3,7 +3,7 @@ package fb.permutation;
 /**
  * @author jbu
  */
-public class CombinationK {
+public class CombinationKChars {
   private static void doCombination(char[] s, int k, int pos, int start, StringBuilder sb) {
     if (pos >= k) {
       System.out.println(sb.toString());
