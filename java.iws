@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4515f29-27fd-4332-95a6-d4a8833c9049" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/array/FourSum.java" afterPath="$PROJECT_DIR$/fb/array/FourSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/array/ThreeSum.java" afterPath="$PROJECT_DIR$/fb/array/ThreeSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/array/ThreeSumClosest.java" afterPath="$PROJECT_DIR$/fb/array/ThreeSumClosest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/math/AddBinary.java" afterPath="$PROJECT_DIR$/fb/math/AddBinary.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/string/Anagrams.java" afterPath="$PROJECT_DIR$/fb/string/Anagrams.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java.iws" afterPath="$PROJECT_DIR$/java.iws" />
     </list>
     <ignored path="java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,43 +63,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ThreeSum.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/array/ThreeSum.java">
+      <file leaf-file-name="FourSum.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/array/FourSum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="16" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.0">
+            <state line="117" column="172" selection-start="3911" selection-end="3911" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#802#822#0" expanded="true" />
-                <element signature="e#1290#1299#0" expanded="true" />
-                <element signature="e#1518#1538#0" expanded="true" />
+                <element signature="e#998#1018#0" expanded="true" />
+                <element signature="e#1145#1165#0" expanded="true" />
+                <element signature="e#1251#1275#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreeSumClosest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/array/ThreeSumClosest.java">
+      <file leaf-file-name="AddBinary.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/math/AddBinary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
+            <state line="26" column="174" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FourSum.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fb/array/FourSum.java">
+      <file leaf-file-name="AddTwoNumbers.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/math/AddTwoNumbers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="44" selection-start="1845" selection-end="1845" vertical-scroll-proportion="-0.09865471">
-              <folding>
-                <element signature="e#1609#1629#0" expanded="true" />
-                <element signature="e#1685#1714#0" expanded="true" />
-                <element signature="e#1929#1938#0" expanded="true" />
-                <element signature="e#3067#3087#0" expanded="true" />
-                <element signature="e#3123#3132#0" expanded="true" />
-                <element signature="e#3410#3419#0" expanded="true" />
-                <element signature="e#4134#4154#0" expanded="true" />
-                <element signature="e#5650#5670#0" expanded="true" />
-                <element signature="e#6247#6256#0" expanded="true" />
-              </folding>
+            <state line="28" column="177" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Anagrams.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/string/Anagrams.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="179" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClimbStairs.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/dp/ClimbStairs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="176" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Combination.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fb/permutation/Combination.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="38" selection-end="38" vertical-scroll-proportion="0.04636785">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CombinationK.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/permutation/CombinationK.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="13" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CombinationSum.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/permutation/CombinationSum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="176" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Jump4.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/dp/Jump4.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MinimumPathSum.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/dp/MinimumPathSum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,7 +179,10 @@
         <option value="$PROJECT_DIR$/src/MorseCode.java" />
         <option value="$PROJECT_DIR$/fb/array/ThreeSum.java" />
         <option value="$PROJECT_DIR$/fb/array/ThreeSumClosest.java" />
+        <option value="$PROJECT_DIR$/fb/dp/Jump3.java" />
         <option value="$PROJECT_DIR$/fb/array/FourSum.java" />
+        <option value="$PROJECT_DIR$/fb/math/AddBinary.java" />
+        <option value="$PROJECT_DIR$/fb/string/Anagrams.java" />
       </list>
     </option>
   </component>
@@ -211,7 +267,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="array" />
+              <option name="myItemId" value="string" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IntelliJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="permutation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IntelliJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -258,7 +346,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
+    <property name="options.lastSelected" value="editing.templates" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -289,7 +377,7 @@
     <option name="referencePos" value="0" />
     <option name="showLabels" value="true" />
   </component>
-  <component name="RunManager" selected="Application.MorseCode">
+  <component name="RunManager" selected="Application.Anagrams">
     <configuration default="false" name="CommandProcessorTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -359,6 +447,28 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Anagrams" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="fb.string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="fb.string.Anagrams" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="IntelliJ" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -482,10 +592,11 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.CommandProcessorTest" />
       <item index="1" class="java.lang.String" itemvalue="Application.Tries" />
       <item index="2" class="java.lang.String" itemvalue="Application.MorseCode" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Anagrams" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -529,7 +640,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="965" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -539,18 +650,18 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3992891" sideWeight="0.716299" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17535545" sideWeight="0.39031863" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17535545" sideWeight="0.39338234" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13033175" sideWeight="0.49754903" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.49019608" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.4877451" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13909313" sideWeight="0.82464457" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17535545" sideWeight="0.60539216" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13909313" sideWeight="0.82464457" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17535545" sideWeight="0.6023284" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -619,27 +730,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/util/Arrays.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="159" selection-start="12009" selection-end="12009" vertical-scroll-proportion="0.6588629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fb/tree/TriesST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="24" selection-start="95" selection-end="2755" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fb/hackercup/SquishedStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1340" selection-end="2194" vertical-scroll-proportion="0.23916294">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fb/math/Power.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="29" selection-start="310" selection-end="310" vertical-scroll-proportion="0.31390134">
@@ -649,36 +739,114 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fb/array/ThreeSum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="16" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.0">
+        <state line="49" column="14" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#802#822#0" expanded="true" />
-            <element signature="e#1290#1299#0" expanded="true" />
-            <element signature="e#1518#1538#0" expanded="true" />
+            <element signature="e#824#844#0" expanded="true" />
+            <element signature="e#1359#1368#0" expanded="true" />
+            <element signature="e#1585#1605#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fb/array/ThreeSumClosest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
+        <state line="17" column="0" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/dp/CanJump.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/dp/EditDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/dp/Jump3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/dp/Jump4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/dp/MinimumPathSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fb/array/FourSum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="44" selection-start="1845" selection-end="1845" vertical-scroll-proportion="-0.09865471">
+        <state line="117" column="172" selection-start="3911" selection-end="3911" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#1609#1629#0" expanded="true" />
-            <element signature="e#1685#1714#0" expanded="true" />
-            <element signature="e#1929#1938#0" expanded="true" />
-            <element signature="e#3067#3087#0" expanded="true" />
-            <element signature="e#3123#3132#0" expanded="true" />
-            <element signature="e#3410#3419#0" expanded="true" />
-            <element signature="e#4134#4154#0" expanded="true" />
-            <element signature="e#5650#5670#0" expanded="true" />
-            <element signature="e#6247#6256#0" expanded="true" />
+            <element signature="e#998#1018#0" expanded="true" />
+            <element signature="e#1145#1165#0" expanded="true" />
+            <element signature="e#1251#1275#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/math/AddBinary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="174" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/math/AddTwoNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="177" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/string/Anagrams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="179" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/dp/ClimbStairs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="176" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/permutation/CombinationSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="176" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/permutation/CombinationK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/permutation/Combination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="38" selection-end="38" vertical-scroll-proportion="0.04636785">
+          <folding />
         </state>
       </provider>
     </entry>

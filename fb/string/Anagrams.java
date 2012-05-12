@@ -17,14 +17,8 @@ public class Anagrams {
       char[] c = s.toCharArray();
       Arrays.sort(c);
       String ss = new String(c);
-      if (m.containsKey(ss)) {
-        m.get(ss).add(s);
-      }
-      else {
-        ArrayList<String> one = new ArrayList<String>();
-        one.add(s);
-        m.put(ss, one);
-      }
+      if (!m.containsKey(ss)) m.put(ss,new ArrayList<String>());
+      m.get(ss).add(s);
     }
     for (Map.Entry<String, List<String>> e : m.entrySet()) {
       if (e.getValue().size() > 1) {
@@ -32,5 +26,9 @@ public class Anagrams {
       }
     }
     return result;
+  }
+
+  public static void main(String[] args) {
+    new Anagrams().anagrams(new String[]{"rig","rat","jul","dry","goo","art","imp","dud","gos"});
   }
 }
