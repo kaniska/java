@@ -10,10 +10,16 @@ public class RemoveElement {
     int i = 0, j = len - 1;
     while (i <= j) {
       // find first element to be removed
-      while (i < len && A[i] != elem) i++;
+      while (i < len && A[i] != elem) {
+        i++;
+      }
       // find first element to be kept
-      while (j >= 0 && A[j] == elem) j--;
-      if (i > j) break;
+      while (j >= 0 && A[j] == elem) {
+        j--;
+      }
+      if (i > j) {
+        break;
+      }
       swap(A, i, j);
     }
     return i;

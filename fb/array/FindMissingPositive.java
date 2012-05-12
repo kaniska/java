@@ -8,7 +8,6 @@ package fb.array;
  * @author jbu
  */
 public class FindMissingPositive {
-
   /**
    * brute force; sort first, O(nlogN);
    *
@@ -42,7 +41,9 @@ public class FindMissingPositive {
       }
     }
     for (int i = 0; i < n; i++) {
-      if (A[i] != i + 1) return i + 1;
+      if (A[i] != i + 1) {
+        return i + 1;
+      }
     }
     return n + 1;
   }

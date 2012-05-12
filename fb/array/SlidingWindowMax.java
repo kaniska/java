@@ -12,24 +12,26 @@ public class SlidingWindowMax {
     int[] m = new int[len - w + 1];
     ArrayDeque<Integer> deque = new ArrayDeque<Integer>();
     for (int i = 0; i < w; i++) {
-      while (!deque.isEmpty() && a[deque.peekLast()] <= a[i]) deque.removeLast();
+      while (!deque.isEmpty() && a[deque.peekLast()] <= a[i]) {
+        deque.removeLast();
+      }
       deque.addLast(i);
     }
     m[0] = deque.removeFirst();
-
     for (int i = w; i < len; i++) {
-      while (!deque.isEmpty() && deque.peekFirst() <= i - w) deque.removeFirst();
-      while (!deque.isEmpty() && a[deque.peekLast()] < a[i]) deque.removeLast();
+      while (!deque.isEmpty() && deque.peekFirst() <= i - w) {
+        deque.removeFirst();
+      }
+      while (!deque.isEmpty() && a[deque.peekLast()] < a[i]) {
+        deque.removeLast();
+      }
       deque.addLast(i);
       m[i - w + 1] = deque.peekFirst();
     }
     return m;
   }
 
-
   public static void main(String args[]) {
     new SlidingWindowMax().slidingWindowMax(new int[]{2, 3, 4, 2, 6, 7, 8, 2, 4, 1, 2, 3}, 3);
   }
-
-
 }

@@ -29,7 +29,9 @@ public class SortColor {
     int j = 0, k = 0;
     for (int i = 0; i < 3; i++) {
       j = 0;
-      while (j++ < c[i]) A[k++] = i;
+      while (j++ < c[i]) {
+        A[k++] = i;
+      }
     }
   }
 }

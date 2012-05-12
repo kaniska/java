@@ -23,11 +23,9 @@ public class FindSumK {
       return sum;
     }
 
-   public void print() {
-
-     System.out.println(v.toString());
-   }
-
+    public void print() {
+      System.out.println(v.toString());
+    }
   }
 
   private static void doFindSumK(int[] s, int k, int pos, int start, EdgeSum edge) {
@@ -35,7 +33,8 @@ public class FindSumK {
       int sum = edge.add(s[i]);
       if (sum < k) {
         doFindSumK(s, k, pos + 1, i + 1, edge);
-      } else if (sum==k) {
+      }
+      else if (sum == k) {
         edge.print();
       }
       edge.removeLast();
@@ -46,7 +45,6 @@ public class FindSumK {
     EdgeSum edge = new EdgeSum();
     doFindSumK(s, k, 0, 0, edge);
   }
-
 //  static char[] currentCombination=null;
 //  public static char[] nextCombination(char[] s) {
 //

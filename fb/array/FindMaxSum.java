@@ -10,12 +10,11 @@ public class FindMaxSum {
   }
 
   public static int max(int[] a) {
-    int curMax = 0, max= 0;
-    for (int i=0;i<a.length;i++) {
-      curMax = curMax>0? curMax+a[i]:a[i];
-      max = max>curMax? max:curMax;
+    int curMax = 0, max = 0;
+    for (int i = 0; i < a.length; i++) {
+      curMax = curMax > 0 ? curMax + a[i] : a[i];
+      max = max > curMax ? max : curMax;
     }
     return max;
   }
-
 }
