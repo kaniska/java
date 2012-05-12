@@ -14,11 +14,14 @@ public class PlusOne {
       digits[i] = val >= 10 ? 0 : val;
       carry = val >= 10 ? 1 : 0;
     }
-    if (carry == 0) return digits;
+    if (carry == 0) {
+      return digits;
+    }
     int[] result = new int[digits.length + 1];
     result[0] = 1;
-    for (int i = 0; i < digits.length; i++) result[i + 1] = digits[i];
+    for (int i = 0; i < digits.length; i++) {
+      result[i + 1] = digits[i];
+    }
     return result;
-
   }
 }

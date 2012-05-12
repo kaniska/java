@@ -33,21 +33,30 @@ public class MinimumWindowSubstring {
     Deque<Integer> d = new ArrayDeque<Integer>();
     int[] needToFind = new int[256];
     int[] hasFound = new int[256];
-    for (int c : T.toCharArray()) needToFind[c]++;
-
+    for (int c : T.toCharArray()) {
+      needToFind[c]++;
+    }
     int min = Integer.MAX_VALUE;
     String s = "";
     int n = T.length(), count = 0;
     for (int i = 0; i < S.length(); i++) {
       char c = S.charAt(i);
-      if (needToFind[c] <= 0) continue;
+      if (needToFind[c] <= 0) {
+        continue;
+      }
       d.addLast(i);
       hasFound[c]++;
-      if (hasFound[c] <= needToFind[c]) count++;
-      if (count < n) continue;
+      if (hasFound[c] <= needToFind[c]) {
+        count++;
+      }
+      if (count < n) {
+        continue;
+      }
       while (!d.isEmpty()) {
         char x = S.charAt(d.peekFirst());
-        if (needToFind[x] >= hasFound[x]) break;
+        if (needToFind[x] >= hasFound[x]) {
+          break;
+        }
         d.removeFirst();
         hasFound[x]--;
       }
@@ -61,18 +70,23 @@ public class MinimumWindowSubstring {
 
   private boolean containsAll(Map<Character, Integer> m) {
     for (int i : m.values()) {
-      if (i > 0) return false;
+      if (i > 0) {
+        return false;
+      }
     }
     return true;
   }
-
 
   public String minWindow1(String S, String T) {
     Deque<Integer> d = new ArrayDeque<Integer>();
     Map<Character, Integer> h = new HashMap<Character, Integer>();
     for (char c : T.toCharArray()) {
-      if (h.containsKey(c)) h.put(c, h.get(c) + 1);
-      else h.put(c, 1);
+      if (h.containsKey(c)) {
+        h.put(c, h.get(c) + 1);
+      }
+      else {
+        h.put(c, 1);
+      }
     }
     int min = Integer.MAX_VALUE;
     String s = "";
@@ -90,7 +104,6 @@ public class MinimumWindowSubstring {
           s = S.substring(d.peekFirst(), i + 1);
         }
       }
-
     }
     return s;
   }

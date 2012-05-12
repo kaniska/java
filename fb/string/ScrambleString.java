@@ -45,31 +45,52 @@ package fb.string;
  */
 public class ScrambleString {
   public boolean isScramble(String s1, String s2) {
-    if (s1.equals(s2)) return true;
+    if (s1.equals(s2)) {
+      return true;
+    }
     char[] c1 = s1.toCharArray();
     char[] c2 = s2.toCharArray();
     return isScramble(c1, 0, c1.length, c2, 0, c2.length);
   }
 
   boolean isScramble(char[] c1, int start1, int end1, char[] c2, int start2, int end2) {
-    if (!isSameCharSet(c1, start1, end1, c2, start2, end2)) return false;
-    if (end1 - start1 == 1) return c1[start1] == c2[start2];
+    if (!isSameCharSet(c1, start1, end1, c2, start2, end2)) {
+      return false;
+    }
+    if (end1 - start1 == 1) {
+      return c1[start1] == c2[start2];
+    }
     for (int i = 1; i < end1 - start1; i++) {
       if (isScramble(c1, start1, start1 + i, c2, start2, start2 + i) &&
-          isScramble(c1, start1 + i, end1, c2, start2 + i, end2)) return true;
+          isScramble(c1, start1 + i, end1, c2, start2 + i, end2))
+      {
+        return true;
+      }
       if (isScramble(c1, start1, start1 + i, c2, end2 - i, end2) &&
-          isScramble(c1, start1 + i, end1, c2, start2, end2 - i)) return true;
+          isScramble(c1, start1 + i, end1, c2, start2, end2 - i))
+      {
+        return true;
+      }
     }
     return false;
   }
 
   boolean isSameCharSet(char[] c1, int start1, int end1, char[] c2, int start2, int end2) {
     int[] charCount = new int[256];
-    if (end1 - start1 != end2 - start2) return false;
-    for (int i = start1; i < end1; i++) charCount[c1[i]]++;
-    for (int i = start2; i < end2; i++) charCount[c2[i]]--;
-    for (int i = 0; i < charCount.length; i++)
-      if (charCount[i] != 0) return false;
+    if (end1 - start1 != end2 - start2) {
+      return false;
+    }
+    for (int i = start1; i < end1; i++) {
+      charCount[c1[i]]++;
+    }
+    for (int i = start2; i < end2; i++) {
+      charCount[c2[i]]--;
+    }
+    for (int i = 0; i < charCount.length; i++) {
+      if (charCount[i] != 0) {
+        return false;
+      }
+    }
     return true;
   }
 }

@@ -25,22 +25,38 @@ import java.util.*;
 public class SearchInMatrix {
 
   public boolean searchMatrix(int[][] matrix, int target) {
-    if (matrix.length == 0) return false;
+    if (matrix.length == 0) {
+      return false;
+    }
     int i = 0, j = matrix.length - 1;
     int p = -1;
     while (true) {
       if (i >= j) {
-        if (matrix[i][0] == target) return true;
-        else if (matrix[i][0] < target) p = i;
-        else p = i - 1;
+        if (matrix[i][0] == target) {
+          return true;
+        }
+        else if (matrix[i][0] < target) {
+          p = i;
+        }
+        else {
+          p = i - 1;
+        }
         break;
       }
       int m = (i + j) / 2;
-      if (matrix[m][0] == target) return true;
-      if (matrix[m][0] < target) i = m + 1;
-      else j = m - 1;
+      if (matrix[m][0] == target) {
+        return true;
+      }
+      if (matrix[m][0] < target) {
+        i = m + 1;
+      }
+      else {
+        j = m - 1;
+      }
     }
-    if (p < 0) return false;
+    if (p < 0) {
+      return false;
+    }
     i = 0;
     j = matrix[0].length - 1;
     while (true) {
@@ -48,9 +64,15 @@ public class SearchInMatrix {
         return (matrix[p][i] == target);
       }
       int m = (i + j) / 2;
-      if (matrix[p][m] == target) return true;
-      if (matrix[p][m] < target) i = m + 1;
-      else j = m - 1;
+      if (matrix[p][m] == target) {
+        return true;
+      }
+      if (matrix[p][m] < target) {
+        i = m + 1;
+      }
+      else {
+        j = m - 1;
+      }
     }
   }
 }

@@ -10,6 +10,7 @@ public class ProbHalf {
   static Random r = new Random();
   static double PROB = 0.8813;
   static long exp_value = 0;
+
   static boolean prob() {
     if (r.nextDouble() < PROB) {
       return true;
@@ -19,6 +20,7 @@ public class ProbHalf {
 
   /**
    * We have to get any two independant probablitiy
+   *
    * @return
    */
   static boolean prob5() {
@@ -31,7 +33,8 @@ public class ProbHalf {
       if (b1 != b2) {
         break;
       }
-    } while (true);
+    }
+    while (true);
     return b1;
   }
 
@@ -42,21 +45,22 @@ public class ProbHalf {
    * to get aab:   p*p*(1-p)
    * to get bba:   (1-p)*(1-p)*p
    * so if we return a: then probablility is still (1-p) or b is p, same as inital probablity
+   *
    * @return
    */
   static boolean prob5s() {
     boolean b1, b2;
-    b1= prob();
+    b1 = prob();
     do {
       b2 = prob();
       if (b1 != b2) {
         break;
       }
-      b1=b2;
-    } while (true);
+      b1 = b2;
+    }
+    while (true);
     return b2;
   }
-
 
   static void testProb() {
     long s = System.currentTimeMillis();
@@ -68,12 +72,13 @@ public class ProbHalf {
           trueCount++;
         }
       }
-      System.out.println("p--" + 0.5 + ", tc%--" + (double) trueCount / c + " time="+(System.currentTimeMillis()-s)+"ms  exp_value=" +(double)exp_value/c);
+      System.out.println(
+          "p--" + 0.5 + ", tc%--" + (double) trueCount / c + " time=" + (System.currentTimeMillis() - s) +
+              "ms  exp_value=" + (double) exp_value / c);
     }
   }
 
   public static void main(String args[]) {
     testProb();
   }
-
 }

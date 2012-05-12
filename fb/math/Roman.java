@@ -19,7 +19,6 @@ public class Roman {
     return sb.toString();
   }
 
-
   public int romanToInt(String s) {
     int r = 0, cur = 0;
     for (int i = 0; i < ROMAN.length; i++) {
@@ -31,5 +30,4 @@ public class Roman {
     }
     return r;
   }
-
 }

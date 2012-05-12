@@ -3,8 +3,6 @@ package fb;
 /**
  * @author jbu
  */
-
-
 // Definition for singly-linked list.
 public class ListNode {
   public int val;

@@ -23,7 +23,9 @@ import java.util.*;
 public class SolveSudoku {
   public void solveSudoku(char[][] board) {
     int[] next = getNextEmpty(board, 0, 0);
-    if (next == null) return;
+    if (next == null) {
+      return;
+    }
     solve(board, next[0], next[1]);
   }
 
@@ -32,12 +34,18 @@ public class SolveSudoku {
   // and we eleminate this solution and go back to previous position
   boolean solve(char[][] board, int x, int y) {
     char[] possible = getPossibleValues(board, x, y);
-    if (possible == null) return false;
+    if (possible == null) {
+      return false;
+    }
     for (int i = 0; i < possible.length; i++) {
       board[x][y] = possible[i];
       int[] next = getNextEmpty(board, x, y);
-      if (next == null) return true;  // fully filled
-      if (solve(board, next[0], next[1])) return true;
+      if (next == null) {
+        return true;  // fully filled
+      }
+      if (solve(board, next[0], next[1])) {
+        return true;
+      }
       // if this solution is not working, reset current cell and try other values
       board[x][y] = '.';
     }
@@ -54,17 +62,29 @@ public class SolveSudoku {
    */
   char[] getPossibleValues(char[][] board, int x, int y) {
     Set<Character> s = new HashSet<Character>();
-    for (int i = 1; i <= 9; i++) s.add((char) (i + '0'));
-    for (int i = 0; i < 9; i++) {
-      if (board[i][y] != '.') s.remove(board[i][y]);
-      if (board[x][i] != '.') s.remove(board[x][i]);
-      char c = board[x / 3 * 3 + i / 3][y / 3 * 3 + i % 3];
-      if (c != '.') s.remove(c);
+    for (int i = 1; i <= 9; i++) {
+      s.add((char) (i + '0'));
     }
-    if (s.isEmpty()) return null;
+    for (int i = 0; i < 9; i++) {
+      if (board[i][y] != '.') {
+        s.remove(board[i][y]);
+      }
+      if (board[x][i] != '.') {
+        s.remove(board[x][i]);
+      }
+      char c = board[x / 3 * 3 + i / 3][y / 3 * 3 + i % 3];
+      if (c != '.') {
+        s.remove(c);
+      }
+    }
+    if (s.isEmpty()) {
+      return null;
+    }
     char p[] = new char[s.size()];
     int k = 0;
-    for (char i : s) p[k++] = i;
+    for (char i : s) {
+      p[k++] = i;
+    }
     return p;
   }
 
@@ -78,7 +98,9 @@ public class SolveSudoku {
    */
   int[] getNextEmpty(char[][] board, int x, int y) {
     while (x <= 8 && y <= 8) {
-      if (board[x][y] == '.') return new int[]{x, y};
+      if (board[x][y] == '.') {
+        return new int[]{x, y};
+      }
       x = y >= 8 ? x + 1 : x;
       y = y >= 8 ? 0 : y + 1;
     }

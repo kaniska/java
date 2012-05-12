@@ -36,7 +36,8 @@ public class SubSet {
   }
 
   void doCombination(int[] S, int pos, int start, LinkedList<Integer> current,
-                     ArrayList<ArrayList<Integer>> result) {
+                     ArrayList<ArrayList<Integer>> result)
+  {
     for (int i = start; i < S.length; i++) {
       current.addLast(S[i]);
       result.add(new ArrayList(current));

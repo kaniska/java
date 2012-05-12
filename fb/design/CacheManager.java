@@ -29,12 +29,14 @@ public class CacheManager {
       int d = data[i][1];
       if (act == 1) { // get
         cs.get(d);
-      } else { // put
+      }
+      else { // put
         cs.put(d, d);
       }
       if (cs.getKeys().equals(Arrays.asList(data[i + 1]))) {
         System.out.println("CORRECT: " + cs.getKeys() + "  /  " + Arrays.asList(data[i + 1]));
-      } else {
+      }
+      else {
         System.out.println("WRONG: " + cs.getKeys() + "  /  " + Arrays.asList(data[i + 1]));
       }
     }
@@ -84,7 +86,8 @@ class LRUCache<K, V> implements Cache<K, V> {
         ListNode last = removeLast();
         map.remove(last.key);
       }
-    } else {
+    }
+    else {
       ListNode n = map.get(k);
       n.value = v;
       map.put(k, n);  // not changing position if update value
@@ -102,7 +105,9 @@ class LRUCache<K, V> implements Cache<K, V> {
   }
 
   public List<K> getKeys() {
-    if (head == null) return null;
+    if (head == null) {
+      return null;
+    }
     ListNode c = head;
     List<K> l = new ArrayList<K>();
     while (c != null) {
@@ -116,7 +121,8 @@ class LRUCache<K, V> implements Cache<K, V> {
     if (head == null) {
       head = n;
       tail = n;
-    } else {
+    }
+    else {
       n.next = head;
       head.prev = n;
       head = n;
@@ -128,7 +134,8 @@ class LRUCache<K, V> implements Cache<K, V> {
     if (head == tail) {  // one node only
       head = null;
       tail = null;
-    } else {
+    }
+    else {
       tail = tail.prev;
       tail.next = null;
     }
@@ -136,14 +143,17 @@ class LRUCache<K, V> implements Cache<K, V> {
   }
 
   private void moveToFirst(ListNode n) {
-    if (head == n) return;
+    if (head == n) {
+      return;
+    }
     if (tail == n) {
       n.prev.next = null;
       tail = n.prev;
       head.prev = n;
       n.next = head;
       head = n;
-    } else {
+    }
+    else {
       n.prev.next = n.next;
       n.next.prev = n.prev;
       head.prev = n;

@@ -41,7 +41,9 @@ public class TextJustification {
       int start = i;
       num = words[i++].length();
       while (num <= L && i < n) {
-        if (num + 1 + words[i].length() > L) break;
+        if (num + 1 + words[i].length() > L) {
+          break;
+        }
         num = num + 1 + words[i++].length();
       }
       int remaining = L - num;
@@ -51,11 +53,16 @@ public class TextJustification {
       boolean lastLine = (i == n);
       for (int j = 0; j < numOfSpaces; j++) {
         int extra = lastLine ? 1 : 1 + remaining / numOfSpaces + (j < (remaining % numOfSpaces) ? 1 : 0);
-        for (int k = 0; k < extra; k++) sb.append(' ');
+        for (int k = 0; k < extra; k++) {
+          sb.append(' ');
+        }
         sb.append(words[start++]);
       }
-      if (numOfSpaces == 0 || lastLine)
-        for (int k = 0; k < remaining; k++) sb.append(' ');
+      if (numOfSpaces == 0 || lastLine) {
+        for (int k = 0; k < remaining; k++) {
+          sb.append(' ');
+        }
+      }
       result.add(sb.toString());
     }
     return result;

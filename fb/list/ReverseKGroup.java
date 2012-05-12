@@ -69,10 +69,8 @@ public class ReverseKGroup {
       cur.next = prev;
       last = f;
       cur = nodeK;
-
-    } while (true);
-
+    }
+    while (true);
     return head;
   }
-
 }

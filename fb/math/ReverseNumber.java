@@ -10,7 +10,6 @@ public class ReverseNumber {
       x = -x;
       isNeg = true;
     }
-
     int r = 0;
     while (x > 0) {
       r = r * 10 + x % 10;

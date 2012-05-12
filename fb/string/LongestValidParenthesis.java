@@ -14,7 +14,9 @@ public class LongestValidParenthesis {
     Deque<Integer> d = new ArrayDeque<Integer>();
     int max = 0, cur;
     for (int i = 0; i < s.length(); i++) {
-      if (d.isEmpty() || s.charAt(i) == '(' || s.charAt(d.peek()) != '(') d.push(i);
+      if (d.isEmpty() || s.charAt(i) == '(' || s.charAt(d.peek()) != '(') {
+        d.push(i);
+      }
       else {
         d.pop();
         cur = d.isEmpty() ? i + 1 : i - d.peek();
@@ -23,5 +25,4 @@ public class LongestValidParenthesis {
     }
     return max;
   }
-
 }

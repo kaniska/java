@@ -48,9 +48,11 @@ public class SerializeList implements Serializable {
       ObjectInputStream ois = new ObjectInputStream(new FileInputStream("list.ser"));
       SerializeList l2 = (SerializeList) ois.readObject();
       System.out.println(l2);
-    } catch (IOException e) {
+    }
+    catch (IOException e) {
       e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-    } catch (ClassNotFoundException e) {
+    }
+    catch (ClassNotFoundException e) {
       e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
     }
   }

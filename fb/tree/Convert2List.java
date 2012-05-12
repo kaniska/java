@@ -12,13 +12,14 @@ class Pair<F, S> {
     fst = f;
     snd = s;
   }
-
 }
 
 public class Convert2List {
 
   public static Pair<Node, Node> inOrderConversion(Node n) {
-    if (n == null) return null;
+    if (n == null) {
+      return null;
+    }
     Node head = n, tail = n;
     if (n.left != null) {
       Pair<Node, Node> left = inOrderConversion(n.left);
@@ -33,7 +34,6 @@ public class Convert2List {
       tail = right.snd;
     }
     return new Pair<Node, Node>(head, tail);
-
   }
 
   public static void main(String args[]) {

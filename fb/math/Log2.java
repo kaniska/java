@@ -13,19 +13,22 @@ class Log2Test {
   public static void main(String args[]) {
     double d[] = {1232498172.123e223, 17.99, 251.223132, 15, 1.222, 0.1847812};
     double r[] = new double[d.length];
-    for (int i = 0; i < d.length; i++) r[i] = Math.log(d[i]) / Math.log(2);
+    for (int i = 0; i < d.length; i++) {
+      r[i] = Math.log(d[i]) / Math.log(2);
+    }
     Log2[] alg = new Log2[]{/*new Log2Binary(),*/ new Log2Glassdoor(), new Log2GlassdoorSimple(), new Log2Junjie()};
-
     for (Log2 log : alg) {
       System.out.println("CURRENT Algorithm: " + log.getClass().getSimpleName());
       long total = System.nanoTime();
       for (int i = 0; i < d.length; i++) {
         long cur = System.nanoTime();
         double rr = log.calculate(d[i]);
-        System.out.printf("Log2(%10.4f)=%16.10f , diff=%4.2f%%, Time=%d us\n", d[i], rr, (rr - r[i]) * 100 / r[i], (System.nanoTime()-cur)/1000);
+        System.out
+            .printf("Log2(%10.4f)=%16.10f , diff=%4.2f%%, Time=%d us\n", d[i], rr, (rr - r[i]) * 100 / r[i],
+                (System.nanoTime() - cur) / 1000);
 //        System.out.println("Log2("+d[i]+")="+log.calculate(d[i])+"    Difference="+r[i] +  "   (TOOK "+(System.currentTimeMillis()-cur)+"ms)");
       }
-      System.out.println("Total time: " + (System.nanoTime() - total)/1000 + " us");
+      System.out.println("Total time: " + (System.nanoTime() - total) / 1000 + " us");
     }
   }
 }
@@ -44,7 +47,8 @@ class Log2Binary implements Log2 {
     while (Math.abs(Math.pow(2, result) - x) > 0.00001) {
       if (Math.pow(2, result) > x) {
         high = result;
-      } else {
+      }
+      else {
         low = result;
       }
       result = (high + low) / 2;
@@ -78,14 +82,18 @@ class Log2Glassdoor implements Log2 {
   public double calculate(double x) {
     if (x < 1) {
       return -1 * calculate(1 / x);
-    } else if (x == 1) {
+    }
+    else if (x == 1) {
       return 0;
-    } else if (x < 2) {  // suppose x>=1
+    }
+    else if (x < 2) {  // suppose x>=1
       double z = x - 1;
       return 1.442695 * z * (6 + z) / (6 + 4 * z);
-    } else if (x == 2) {
+    }
+    else if (x == 2) {
       return 1;
-    } else { // x>2    logX= 2* logSqrt(X)
+    }
+    else { // x>2    logX= 2* logSqrt(X)
       return 2 * calculate(Math.sqrt(x));
     }
   }
@@ -107,17 +115,25 @@ class Log2GlassdoorSimple implements Log2 {
    * @return
    */
   public double calculate(double x) {
-    if (x < 1)  return -1 * calculate(1 / x);
-    if (x == 1) return 0;
-    if (x == 2) return 1;
+    if (x < 1) {
+      return -1 * calculate(1 / x);
+    }
+    if (x == 1) {
+      return 0;
+    }
+    if (x == 2) {
+      return 1;
+    }
     if (x < 2) {  // suppose x>=1
       double z = x - 1;
       if (z < 0.0001) {
         return 1.442695 * z;
-      } else {
+      }
+      else {
         return 2 * calculate(Math.sqrt(x));
       }
-    } else { // x>2    logX= 2* logSqrt(X)
+    }
+    else { // x>2    logX= 2* logSqrt(X)
       return 1 + calculate(x / 2);
     }
   }
@@ -132,16 +148,22 @@ class Log2Junjie implements Log2 {
    * @return
    */
   public double calculate(double x) {
-    if (x == 1) return 0;
-    if (x == 2) return 1;
-    if (x < 1) return -1 * calculate(1 / x);
+    if (x == 1) {
+      return 0;
+    }
+    if (x == 2) {
+      return 1;
+    }
+    if (x < 1) {
+      return -1 * calculate(1 / x);
+    }
     double z = x - 1;
     if (z < 0.00001) {
       return 1.442695 * z;
-    } else {
+    }
+    else {
       return 2 * calculate(Math.sqrt(x));
     }
   }
-
 }
 

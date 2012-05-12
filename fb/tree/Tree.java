@@ -8,15 +8,14 @@ import java.util.Deque;
  */
 public class Tree {
 
-
   /**
-   *    H
-   *   / \
-   *  E   G
+   * H
+   * / \
+   * E   G
    * /\  / \
-   *A B  F  D
-   *    /
-   *    C
+   * A B  F  D
+   * /
+   * C
    */
 
   public static Node initTree() {
@@ -29,7 +28,6 @@ public class Tree {
     Node n7 = new Node("G", n6, n4);
     return new Node("H", n5, n7);
   }
-
 
   public static void printTree(Node root) {
     Deque<Node> q = new ArrayDeque<Node>();
@@ -55,8 +53,6 @@ public class Tree {
     }
   }
 }
-
-
 
 class Node {
   String s;

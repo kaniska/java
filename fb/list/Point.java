@@ -14,9 +14,17 @@ class Point implements Comparable<Point> {
   }
 
   public int compareTo(Point p) {
-    if (this.pos != p.pos) return this.pos - p.pos;
-    else if (this.isStart && !p.isStart) return -1;
-    else if (!this.isStart && p.isStart) return 1;
-    else return 0;
+    if (this.pos != p.pos) {
+      return this.pos - p.pos;
+    }
+    else if (this.isStart && !p.isStart) {
+      return -1;
+    }
+    else if (!this.isStart && p.isStart) {
+      return 1;
+    }
+    else {
+      return 0;
+    }
   }
 }

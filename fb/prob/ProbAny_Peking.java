@@ -2,6 +2,7 @@ package fb.prob;
 
 /**
  * http://www.mitbbs.com/article/JobHunting/32054765_0.html
+ *
  * @author jbu
  */
 public class ProbAny_Peking extends ProbAny {
@@ -15,10 +16,10 @@ public class ProbAny_Peking extends ProbAny {
       expected = !expected;
       p = 1 - p;
     }
-
     if (prob() == expected) {
       return expected;
-    } else {
+    }
+    else {
       return prob((p - 0.5) / 0.5, expected);
     }
   }

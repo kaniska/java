@@ -37,16 +37,21 @@ public class TriesST<T> {
     return get(key) != null;
   }
 
-
   public T get(String key) {
     Node<T> node = get(root, key, 0);
-    if (node == null) return null;
+    if (node == null) {
+      return null;
+    }
     return node.val;
   }
 
   public Node<T> get(Node x, String key, int d) {
-    if (x == null) return null;
-    if (d == key.length()) return x;
+    if (x == null) {
+      return null;
+    }
+    if (d == key.length()) {
+      return x;
+    }
     char c = key.charAt(d);
     return get(x.nodes[c], key, d + 1);
   }
@@ -65,8 +70,12 @@ public class TriesST<T> {
   }
 
   private void collect(Node x, String prefix, Deque<String> q) {
-    if (x == null) return;
-    if (x.val != null) q.addLast(prefix);
+    if (x == null) {
+      return;
+    }
+    if (x.val != null) {
+      q.addLast(prefix);
+    }
     for (char i = 0; i < R; i++) {
       collect(x.nodes[i], prefix + i, q);
     }
@@ -78,9 +87,15 @@ public class TriesST<T> {
   }
 
   private int search(Node x, String query, int d, int length) {
-    if (x == null) return length;
-    if (x.val != null) length = d;
-    if (d == query.length()) return length;
+    if (x == null) {
+      return length;
+    }
+    if (x.val != null) {
+      length = d;
+    }
+    if (d == query.length()) {
+      return length;
+    }
     char c = query.charAt(d);
     return search(x.nodes[c], query, d + 1, length);
   }
@@ -91,20 +106,16 @@ public class TriesST<T> {
     for (int i = 0; i < s.length; i++) {
       tries.put(s[i], i);
     }
-
     System.out.println("contains she=" + tries.contains("she"));
     System.out.println("contains shore=" + tries.contains("shore"));
-
     Iterable<String> keys = tries.keys();
     for (String k : keys) {
       System.out.println(k);
     }
-
     keys = tries.keys("sh");
     for (String k : keys) {
       System.out.println(k);
     }
-
     System.out.println(26535 % 997);
     int R = 256;
     int RM = 1;
@@ -113,9 +124,5 @@ public class TriesST<T> {
       RM = (R * RM) % Q;
       System.out.println(RM);
     }
-
-
   }
-
-
 }

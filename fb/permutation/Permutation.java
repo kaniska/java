@@ -61,13 +61,10 @@ public class Permutation {
     doPermutation(s, 0, used, current);
   }
 
-
-
   public static void main(String args[]) {
     String s = "abcdefgh";
     char[] s1 = s.toCharArray();
     long start = System.currentTimeMillis();
-
     int cc = 0;
     while (nextPermutation(s1)) {
 //      System.out.println(s1);
@@ -75,10 +72,7 @@ public class Permutation {
     }
     System.out.println(cc + ":" + (System.currentTimeMillis() - start));
     start = System.currentTimeMillis();
-
     permutation(s.toCharArray());
     System.out.println(count + ":" + (System.currentTimeMillis() - start));
-
   }
-
 }

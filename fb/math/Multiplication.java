@@ -17,7 +17,6 @@ public class Multiplication {
       }
       result[i] += carry[0];
     }
-
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < result.length; i++) {
       if (i == 0 && result[i] == 0) {
@@ -26,11 +25,9 @@ public class Multiplication {
       sb.append((char) (result[i] + '0'));
     }
     return sb.toString();
-
   }
 
   public static void main(String args[]) {
     System.out.println(multiply("0", "6891012"));
   }
-
 }

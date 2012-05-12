@@ -6,7 +6,9 @@ package fb.string;
 public class LongestSubStringWithoutRepeating {
 
   public int lengthOfLongestSubstring(String s) {
-    if (s == null || s.length() == 0) return 0;
+    if (s == null || s.length() == 0) {
+      return 0;
+    }
     int start = 0, max = 1;
     for (int i = 1; i < s.length(); i++) {
       for (int k = i - 1; k >= start; k--) {
@@ -16,11 +18,9 @@ public class LongestSubStringWithoutRepeating {
         }
       }
       max = max > (i - start + 1) ? max : (i - start + 1);
-
     }
     return max;
   }
-
 
   //  04/18/2012 : assume s range ['a'..'z'] , we use boolean map to check if a letter appear before
   public int lengthOfLongestSubstring1(String s) {
@@ -35,14 +35,12 @@ public class LongestSubStringWithoutRepeating {
           start++;
         }
         start++;
-      } else {
+      }
+      else {
         m[x] = true;
       }
       max = max < (i - start + 1) ? (i - start + 1) : max;
-
     }
     return max;
-
   }
-
 }

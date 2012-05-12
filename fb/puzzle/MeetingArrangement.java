@@ -55,13 +55,21 @@ public class MeetingArrangement {
 
   static class PointComparator implements Comparator<Point> {
     public int compare(Point o1, Point o2) {
-      if (o1.pos < o2.pos) return -1;
+      if (o1.pos < o2.pos) {
+        return -1;
+      }
       if (o1.pos == o2.pos) {
-        if (o1.isStart && !o2.isStart) return -1;
-        if (!o1.isStart && o2.isStart) return 1;
+        if (o1.isStart && !o2.isStart) {
+          return -1;
+        }
+        if (!o1.isStart && o2.isStart) {
+          return 1;
+        }
         return 0;
       }
-      if (o1.pos > o2.pos) return 1;
+      if (o1.pos > o2.pos) {
+        return 1;
+      }
       return 0;
     }
   }
@@ -82,13 +90,15 @@ public class MeetingArrangement {
     for (Point p : plist) {
       if (p.isStart) {
         noneSet.add(p.s);
-      } else {
+      }
+      else {
         if (oneSet.contains(p.s)) {
           result.add(p.pos);
           oneSet.clear();
           oneSet.addAll(noneSet);
           noneSet.clear();
-        } else if (noneSet.contains(p.s)) {
+        }
+        else if (noneSet.contains(p.s)) {
           result.add(p.pos);
           result.add(p.pos - 1);
           for (Segment s : noneSet) {
@@ -98,10 +108,8 @@ public class MeetingArrangement {
           }
           noneSet.clear();
         }
-
       }
     }
-
     return result;
   }
 
@@ -111,13 +119,12 @@ public class MeetingArrangement {
     for (int i = 0; i < 10; i++) {
       int x = 1 + r.nextInt(31);
       int d = 1 + r.nextInt(10);
-      if (x + d > 31) continue;
+      if (x + d > 31) {
+        continue;
+      }
       list.add(new Segment(x, x + d));
     }
     System.out.println(list);
-
     System.out.println(getEventDays(list));
-
   }
-
 }

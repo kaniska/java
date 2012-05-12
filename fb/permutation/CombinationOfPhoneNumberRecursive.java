@@ -24,9 +24,7 @@ public class CombinationOfPhoneNumberRecursive {
       letters[pos] = charKey[key][i];
       doLetterCombination(digits, pos + 1, letters, result);
     }
-
   }
-
 
   char[][] charKey = {
       {'0'},
@@ -40,5 +38,4 @@ public class CombinationOfPhoneNumberRecursive {
       {'t', 'u', 'v'},
       {'w', 'x', 'y', 'z'}
   };
-
 }

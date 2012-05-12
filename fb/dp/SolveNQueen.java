@@ -31,8 +31,12 @@ public class SolveNQueen {
 
   private boolean valid(int[] current, int row, int col) {
     for (int i = 0; i < row; i++) {
-      if (current[i] == col) return false;
-      if (Math.abs(row - i) == Math.abs(col - current[i])) return false;
+      if (current[i] == col) {
+        return false;
+      }
+      if (Math.abs(row - i) == Math.abs(col - current[i])) {
+        return false;
+      }
     }
     return true;
   }
@@ -48,6 +52,4 @@ public class SolveNQueen {
     }
     return r;
   }
-
-
 }

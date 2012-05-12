@@ -11,7 +11,9 @@ public class ZigZagConversion {
   }
 
   public String convert(String s, int nRows) {
-    if (nRows == 1) return s;
+    if (nRows == 1) {
+      return s;
+    }
     int n = s.length();
     int nCols = n / (2 * (nRows - 1)) * (nRows - 1);
     int remaining = n % (2 * (nRows - 1));
@@ -19,13 +21,21 @@ public class ZigZagConversion {
     char[][] z = new char[nRows][nCols];
     int i = 0, j = 0, col = 0, row = 0;
     while (i < n) {
-      while (i < n && row < nRows - 1) z[row++][col] = s.charAt(i++);
-      while (i < n && row > 0) z[row--][col++] = s.charAt(i++);
+      while (i < n && row < nRows - 1) {
+        z[row++][col] = s.charAt(i++);
+      }
+      while (i < n && row > 0) {
+        z[row--][col++] = s.charAt(i++);
+      }
     }
     StringBuilder sb = new StringBuilder();
-    for (i = 0; i < nRows; i++)
-      for (j = 0; j < nCols; j++)
-        if (z[i][j] != 0) sb.append(z[i][j]);
+    for (i = 0; i < nRows; i++) {
+      for (j = 0; j < nCols; j++) {
+        if (z[i][j] != 0) {
+          sb.append(z[i][j]);
+        }
+      }
+    }
     return sb.toString();
   }
 }

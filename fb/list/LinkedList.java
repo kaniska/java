@@ -18,22 +18,24 @@ public class LinkedList<T> {
     head = n;
   }
 
-  public  void print() {
+  public void print() {
     Node<T> n = head;
-    while (n!=null) {
-      System.out.print(n.t+"->");
-      n=n.next;
+    while (n != null) {
+      System.out.print(n.t + "->");
+      n = n.next;
     }
     System.out.println(" ///");
   }
 
   public void reverse() {
-    if (head == null || head.next == null) return;
+    if (head == null || head.next == null) {
+      return;
+    }
     Node<T> pre = null;
     Node<T> cur = head;
     Node<T> temp = null;
-    while (cur!=null) {
-      temp =  cur.next;
+    while (cur != null) {
+      temp = cur.next;
       cur.next = pre;
       pre = cur;
       cur = temp;

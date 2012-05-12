@@ -33,7 +33,8 @@ public class String2Float {
         case '-':
           if (afterE) {
             positiveE = false;
-          } else {
+          }
+          else {
             positiveNum = false;
           }
           break;
@@ -56,9 +57,11 @@ public class String2Float {
         case '9':
           if (afterE) {
             exp = 10 * exp + (c - '0');
-          } else if (!floatingPoint) {
+          }
+          else if (!floatingPoint) {
             f = 10 * f + (c - '0');
-          } else {
+          }
+          else {
             f = f + (c - '0') * floatingFactor;
             floatingFactor /= 10;
           }
@@ -81,10 +84,13 @@ public class String2Float {
   }
 
   public static float string2float(String s, boolean exception) throws NumberFormatException {
-    if (exception) return string2float(s);
+    if (exception) {
+      return string2float(s);
+    }
     try {
       return string2float(s);
-    } catch (NumberFormatException e) {
+    }
+    catch (NumberFormatException e) {
       p(e);
     }
     return 0;

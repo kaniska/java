@@ -13,8 +13,12 @@ public class SubstringWithConcatenationWords {
     Map<String, Integer> needFind = new HashMap<String, Integer>();
     Map<String, Integer> hasFound = new HashMap<String, Integer>();
     for (int i = 0; i < l; i++) {
-      if (!needFind.containsKey(L[i])) needFind.put(L[i], 1);
-      else needFind.put(L[i], needFind.get(L[i]) + 1);
+      if (!needFind.containsKey(L[i])) {
+        needFind.put(L[i], 1);
+      }
+      else {
+        needFind.put(L[i], needFind.get(L[i]) + 1);
+      }
     }
     ArrayList<Integer> r = new ArrayList<Integer>();
     int j;
@@ -26,12 +30,18 @@ public class SubstringWithConcatenationWords {
         hasFound.put(w, 1);
         for (j = 1; j < l; j++) {
           w = S.substring(i + j * m, i + (j + 1) * m);
-          if (!needFind.containsKey(w)) break;
+          if (!needFind.containsKey(w)) {
+            break;
+          }
           Integer v = hasFound.get(w);
           hasFound.put(w, v == null ? 1 : v + 1);
-          if (hasFound.get(w) > needFind.get(w)) break;
+          if (hasFound.get(w) > needFind.get(w)) {
+            break;
+          }
         }
-        if (j == l) r.add(i);
+        if (j == l) {
+          r.add(i);
+        }
       }
     }
     return r;

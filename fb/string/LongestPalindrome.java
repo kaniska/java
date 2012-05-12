@@ -37,7 +37,6 @@ public class LongestPalindrome {
       }
     }
     return s.substring(start, start + max);
-
   }
 
   /**
@@ -62,7 +61,6 @@ public class LongestPalindrome {
         maxString = n1;
       }
     }
-
     return maxString;
   }
 

@@ -11,8 +11,12 @@ import java.util.*;
 public class RotateList {
 
   public ListNode rotateList(ListNode head, int n) {
-    if (n == 0) return head;
-    if (head == null || head.next == null) return head;
+    if (n == 0) {
+      return head;
+    }
+    if (head == null || head.next == null) {
+      return head;
+    }
     // number of nodes >=2 and n>=1
     // take n mod [list]
     ListNode cur = head;
@@ -24,10 +28,14 @@ public class RotateList {
       cur = cur.next;
     }
     n = n % total;
-    if (n == 0) return head;
+    if (n == 0) {
+      return head;
+    }
     int i = 0;
     cur = head;
-    while (++i < total - n) cur = cur.next;
+    while (++i < total - n) {
+      cur = cur.next;
+    }
     last.next = head;
     head = cur.next;
     cur.next = null;

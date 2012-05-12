@@ -8,8 +8,9 @@ import java.util.*;
  */
 public class SolveNQueenTotal {
   public static void main(String args[]) {
-    for (int i = 1; i < 20; i++)
+    for (int i = 1; i < 20; i++) {
       System.out.println(i + " =" + new SolveNQueenTotal().totalNQueens(i));
+    }
   }
 
   public int totalNQueens(int n) {
@@ -18,7 +19,9 @@ public class SolveNQueenTotal {
   }
 
   int solve(int row, int n, int[] current) {
-    if (row == n) return 1;
+    if (row == n) {
+      return 1;
+    }
     int total = 0;
     for (int i = 0; i < n; i++) {
       if (isValid(current, row, i)) {
@@ -31,7 +34,9 @@ public class SolveNQueenTotal {
 
   boolean isValid(int[] current, int row, int pos) {
     for (int i = 0; i < row; i++) {
-      if (current[i] == pos || Math.abs(current[i] - pos) == (row - i)) return false;
+      if (current[i] == pos || Math.abs(current[i] - pos) == (row - i)) {
+        return false;
+      }
     }
     return true;
   }

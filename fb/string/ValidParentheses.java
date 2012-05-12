@@ -12,7 +12,6 @@ public class ValidParentheses {
     // 1. always find match on top of stack
     // 2. no remainings in stack after
     Stack<Character> st = new Stack<Character>();
-
     for (int i = 0; i < s.length(); i++) {
       char c = s.charAt(i);
       switch (c) {
@@ -22,15 +21,21 @@ public class ValidParentheses {
           st.push(c);
           break;
         case ')':
-          if (st.size() == 0 || st.peek() != '(') return false;
+          if (st.size() == 0 || st.peek() != '(') {
+            return false;
+          }
           st.pop();
           break;
         case '}':
-          if (st.size() == 0 || st.peek() != '{') return false;
+          if (st.size() == 0 || st.peek() != '{') {
+            return false;
+          }
           st.pop();
           break;
         case ']':
-          if (st.size() == 0 || st.peek() != '[') return false;
+          if (st.size() == 0 || st.peek() != '[') {
+            return false;
+          }
           st.pop();
           break;
         default:
@@ -38,6 +43,5 @@ public class ValidParentheses {
       }
     }
     return st.size() == 0;
-
   }
 }

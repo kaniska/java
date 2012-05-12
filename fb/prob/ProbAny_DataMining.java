@@ -15,7 +15,6 @@ public class ProbAny_DataMining extends ProbAny {
     if (p <= 0.0) {
       return false;
     }
-
     int bitPos = 0;
     while (p > EPS) {
       exp_value++;
@@ -31,7 +30,6 @@ public class ProbAny_DataMining extends ProbAny {
           allFalse = allFalse && !flip;
           EPS = EPS * 2;
         }
-
         if (allTrue) {
           return true;
         }
@@ -43,8 +41,6 @@ public class ProbAny_DataMining extends ProbAny {
         p = p - 1.0;
       }
     }
-
     return false;
   }
-
 }

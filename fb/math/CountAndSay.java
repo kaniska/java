@@ -10,7 +10,6 @@ public class CountAndSay {
       s = rem(s);
     }
     return s;
-
   }
 
   String rem(String s) {
@@ -22,7 +21,8 @@ public class CountAndSay {
         sb.append(count).append(pre);
         count = 1;
         pre = s.charAt(i);
-      } else {
+      }
+      else {
         count++;
       }
     }

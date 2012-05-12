@@ -10,7 +10,6 @@ public class AddBinary {
       b1 = (j >= 0) ? (b.charAt(j--) - '0') : 0;
       s[k--] = (char) ((a1 ^ b1 ^ carry) + '0');
       carry = (a1 + b1 + carry) >> 1;
-
     }
     String r = new String(s);
     return (r.charAt(0) == '0' && r.length() > 1) ? r.substring(1) : r;

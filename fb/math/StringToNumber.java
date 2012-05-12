@@ -12,15 +12,20 @@ public class StringToNumber {
     // WHat if it's MIN_VALUE,
     // or > MAX_VALUE OR < MIN_VALUE
     int n = str.length(), i = 0;
-    while (i < n && (str.charAt(i) == ' ' || str.charAt(i) == '\t')) i++;
+    while (i < n && (str.charAt(i) == ' ' || str.charAt(i) == '\t')) {
+      i++;
+    }
     boolean isNeg = false;
-    if (i < n && (str.charAt(i) == '+' || str.charAt(i) == '-'))
+    if (i < n && (str.charAt(i) == '+' || str.charAt(i) == '-')) {
       isNeg = str.charAt(i++) == '-';
+    }
     int num = 0;
     while (i < n && str.charAt(i) <= '9' && str.charAt(i) >= '0') {
       // use x for overflow check
       int x = str.charAt(i) - '0';
-      if ((Integer.MAX_VALUE - x) / 10 < num) return isNeg ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+      if ((Integer.MAX_VALUE - x) / 10 < num) {
+        return isNeg ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+      }
       num = num * 10 + x;
       i++;
     }
@@ -39,17 +44,29 @@ public class StringToNumber {
       c = s.charAt(i);
       switch (c) {
         case '-':
-          if (isNeg) throw new IllegalArgumentException("Wrong number" + s);
-          else isNeg = true;
+          if (isNeg) {
+            throw new IllegalArgumentException("Wrong number" + s);
+          }
+          else {
+            isNeg = true;
+          }
           break;
         case '.':
-          if (exp || afterPoint) throw new IllegalArgumentException("Wrong number" + s);
-          else afterPoint = true;
+          if (exp || afterPoint) {
+            throw new IllegalArgumentException("Wrong number" + s);
+          }
+          else {
+            afterPoint = true;
+          }
           break;
         case 'e':
         case 'E':
-          if (exp) throw new IllegalArgumentException("Wrong number" + s);
-          else exp = true;
+          if (exp) {
+            throw new IllegalArgumentException("Wrong number" + s);
+          }
+          else {
+            exp = true;
+          }
           break;
         case '0':
         case '1':
@@ -63,10 +80,12 @@ public class StringToNumber {
         case '9':
           if (exp) {
             power = power * 10 + (c - '0');
-          } else if (afterPoint) {
+          }
+          else if (afterPoint) {
             f += (float) (c - '0') / divider;
             divider *= 10;
-          } else {
+          }
+          else {
             f = f * 10 + (c - '0');
           }
           break;
@@ -76,11 +95,12 @@ public class StringToNumber {
     }
     while (power > 0) {
       f *= 10;
-      if (f > Float.MAX_VALUE) throw new IllegalArgumentException("Wrong number" + s);
+      if (f > Float.MAX_VALUE) {
+        throw new IllegalArgumentException("Wrong number" + s);
+      }
       power--;
     }
     return isNeg ? -f : f;
-
   }
 
   public static void main(String args[]) {
@@ -88,7 +108,8 @@ public class StringToNumber {
     for (String s1 : s) {
       try {
         System.out.println(s1 + "=" + atof(s1));
-      } catch (Exception e) {
+      }
+      catch (Exception e) {
         System.out.println("Exception=" + e.getMessage());
       }
     }

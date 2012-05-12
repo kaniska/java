@@ -29,7 +29,9 @@ public class CombinationSum {
     return new ArrayList<ArrayList<Integer>>(result);
   }
 
-  void doCombinationSum(int[] candidates, int target, int pos, ArrayList<Integer> current, HashSet<ArrayList<Integer>> result) {
+  void doCombinationSum(int[] candidates, int target, int pos, ArrayList<Integer> current,
+                        HashSet<ArrayList<Integer>> result)
+  {
     if (target == 0) {
       result.add(new ArrayList<Integer>(current));
       return;

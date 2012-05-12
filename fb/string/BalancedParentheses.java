@@ -22,7 +22,8 @@ public class BalancedParentheses {
     for (int i = 0; i < str.length; i++) {
       if (str[i] == '(') {
         st.push(i);
-      } else if (str[i] == ')') {
+      }
+      else if (str[i] == ')') {
         if (!st.isEmpty() && str[st.peek()] == '(') {
           valid[st.pop()] = true;
           valid[i] = true;
@@ -30,10 +31,11 @@ public class BalancedParentheses {
       }
     }
     for (int i = 0; i < str.length; i++) {
-      if ((str[i] != '(' && str[i] != ')') || valid[i]) sb.append(str[i]);
+      if ((str[i] != '(' && str[i] != ')') || valid[i]) {
+        sb.append(str[i]);
+      }
     }
     System.out.println(s + " -->" + sb.toString());
     return sb.toString();
   }
-
 }

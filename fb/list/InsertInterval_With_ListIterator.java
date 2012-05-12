@@ -30,19 +30,24 @@ public class InsertInterval_With_ListIterator {
     boolean inserted = false;
     while (it.hasNext()) {
       Interval cur = it.next();
-      if (cur.end < newInterval.start) continue;
+      if (cur.end < newInterval.start) {
+        continue;
+      }
       if (cur.start > newInterval.end) {
         it.previous();
         it.add(newInterval);
         inserted = true;
         break;
-      } else {
+      }
+      else {
         newInterval.start = Math.min(newInterval.start, cur.start);
         newInterval.end = Math.max(newInterval.end, cur.end);
         it.remove();
       }
     }
-    if (!inserted) it.add(newInterval);
+    if (!inserted) {
+      it.add(newInterval);
+    }
     return intervals;
   }
 }

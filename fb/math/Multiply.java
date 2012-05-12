@@ -22,7 +22,9 @@ public class Multiply {
   public String multiply(String num1, String num2) {
     int len1 = num1.length(), len2 = num2.length();
     char[] r = new char[len1 + len2];
-    for (int i = 0; i < r.length; i++) r[i] = '0';
+    for (int i = 0; i < r.length; i++) {
+      r[i] = '0';
+    }
     for (int i = len1 - 1; i >= 0; i--) {
       int j = 0, carry = 0;
       for (j = len2 - 1; j >= 0; j--) {
@@ -33,8 +35,12 @@ public class Multiply {
       r[i] = (char) (carry + '0');
     }
     int s = 0;
-    while (s < r.length && r[s] == '0') s++;
-    if (s == r.length) return "0";
+    while (s < r.length && r[s] == '0') {
+      s++;
+    }
+    if (s == r.length) {
+      return "0";
+    }
     return new String(r).substring(s);
   }
 }

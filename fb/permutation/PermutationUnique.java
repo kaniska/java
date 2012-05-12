@@ -20,16 +20,19 @@ public class PermutationUnique {
     return new ArrayList<ArrayList<Integer>>(result);
   }
 
-
   void doPermutation(int[] num, int pos, boolean[] used, int[] current, Set<ArrayList<Integer>> result) {
     if (pos == num.length) {
       ArrayList<Integer> one = new ArrayList<Integer>();
-      for (int i = 0; i < current.length; i++) one.add(current[i]);
+      for (int i = 0; i < current.length; i++) {
+        one.add(current[i]);
+      }
       result.add(one);
       return;
     }
     for (int i = 0; i < used.length; i++) {
-      if (used[i] || (i > 0 && num[i] == num[i - 1] && used[i - 1] == false)) continue;
+      if (used[i] || (i > 0 && num[i] == num[i - 1] && used[i - 1] == false)) {
+        continue;
+      }
       used[i] = true;
       current[pos] = num[i];
       doPermutation(num, pos + 1, used, current, result);

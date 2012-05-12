@@ -8,8 +8,12 @@ package fb.dp;
  */
 public class ClimbStairs {
   public int climbStairs(int n) {
-    if (n == 0) return 0;
-    if (n == 1) return 1;
+    if (n == 0) {
+      return 0;
+    }
+    if (n == 1) {
+      return 1;
+    }
     int[] w = new int[n + 1];
     w[0] = 1;
     w[1] = 1;
@@ -17,6 +21,5 @@ public class ClimbStairs {
       w[i] = w[i - 1] + w[i - 2];
     }
     return w[n];
-
   }
 }

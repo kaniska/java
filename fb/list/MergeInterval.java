@@ -16,7 +16,8 @@ public class MergeInterval {
     for (int i = 0; i < points.length; i++) {
       if (points[i].isStart) {
         d.push(points[i]);
-      } else {
+      }
+      else {
         Point p = d.pop();
         if (d.isEmpty()) {
           result.add(new Interval(p.pos, points[i].pos));

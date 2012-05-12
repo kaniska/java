@@ -10,7 +10,9 @@ import java.util.*;
  */
 public class MaximalRectangle {
   public int maximalRectangle(char[][] matrix) {
-    if (matrix.length == 0) return 0;
+    if (matrix.length == 0) {
+      return 0;
+    }
     int m = matrix.length, n = matrix[0].length;
     int[] height = new int[n];
     int max = 0;
@@ -21,10 +23,13 @@ public class MaximalRectangle {
         System.out.print(height[j]);
       }
       System.out.println();
-      if (i == 6)
+      if (i == 6) {
         System.out.println("AAA");
+      }
       int curMax = getHistMax(height);
-      if (curMax > max) max = curMax;
+      if (curMax > max) {
+        max = curMax;
+      }
     }
     return max;
   }
@@ -34,26 +39,34 @@ public class MaximalRectangle {
     int[] lsize = new int[height.length];
     int[] rsize = new int[height.length];
     for (int i = 0; i < height.length; i++) {
-      while (!s.isEmpty() && height[s.peek()] >= height[i]) s.pop();
+      while (!s.isEmpty() && height[s.peek()] >= height[i]) {
+        s.pop();
+      }
       lsize[i] = s.isEmpty() ? i : (i - s.peek() - 1);
       s.push(i);
     }
     s.clear();
     for (int i = height.length - 1; i >= 0; i--) {
-      while (!s.isEmpty() && height[s.peek()] >= height[i]) s.pop();
+      while (!s.isEmpty() && height[s.peek()] >= height[i]) {
+        s.pop();
+      }
       rsize[i] = s.isEmpty() ? (height.length - i - 1) : (s.peek() - i - 1);
       s.push(i);
     }
     int max = 0;
     for (int i = 0; i < height.length; i++) {
       int cur = height[i] * (1 + lsize[i] + rsize[i]);
-      if (cur > max) max = cur;
+      if (cur > max) {
+        max = cur;
+      }
     }
     return max;
   }
 
   public int maximalRectangle(String[] matrix) {
-    if (matrix.length == 0) return 0;
+    if (matrix.length == 0) {
+      return 0;
+    }
     char[][] m = new char[matrix.length][matrix[0].length()];
     System.out.println("Matrix == ");
     for (int i = 0; i < matrix.length; i++) {

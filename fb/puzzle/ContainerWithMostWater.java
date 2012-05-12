@@ -17,18 +17,29 @@ public class ContainerWithMostWater {
 
   public int maxArea0421(int[] height) {
     int n = height.length;
-    if (n <= 1) return 0;
+    if (n <= 1) {
+      return 0;
+    }
     int i = 0, j = n - 1;
     int hi = height[i], hj = height[j];
     int max = Math.min(hi, hj) * (j - i), cur;
     while (i < j) {
       if (hi < hj) {
-        while (i < j && height[i] <= hi) i++;
-        if (i == j) break;
+        while (i < j && height[i] <= hi) {
+          i++;
+        }
+        if (i == j) {
+          break;
+        }
         hi = height[i];
-      } else {
-        while (i < j && height[j] <= hj) j--;
-        if (i == j) break;
+      }
+      else {
+        while (i < j && height[j] <= hj) {
+          j--;
+        }
+        if (i == j) {
+          break;
+        }
         hj = height[j];
       }
       cur = Math.min(hi, hj) * (j - i);
@@ -42,26 +53,34 @@ public class ContainerWithMostWater {
   }
 
   public int maxArea0413(int[] height) {
-    if (height == null || height.length <= 1) return 0;
+    if (height == null || height.length <= 1) {
+      return 0;
+    }
     int i = 0, j = height.length - 1;
     int hi = height[i], hj = height[j];
     int max = Math.min(hi, hj) * (j - i);
     while (i < j) {
       if (hi <= hj) {
         i++;
-        while (height[i] <= hi && i < j) i++;
-      } else {
-        j--;
-        while (height[j] <= hj && i < j) j--;
+        while (height[i] <= hi && i < j) {
+          i++;
+        }
       }
-      if (i > j) break;
+      else {
+        j--;
+        while (height[j] <= hj && i < j) {
+          j--;
+        }
+      }
+      if (i > j) {
+        break;
+      }
       hi = height[i];
       hj = height[j];
       max = Math.max(max, Math.min(hi, hj) * (j - i));
     }
     return max;
   }
-
 
   public int maxArea(int[] height) {
     int i = 0, j = height.length - 1;
@@ -73,14 +92,22 @@ public class ContainerWithMostWater {
       int v = getArea(height, i, j);
       max = max < v ? v : max;
       if (hi <= hj) {
-        while (i < j && height[i] <= hi) i++;
-        if (i == j || height[i] == hi) break;
-      } else {
-        while (i < j && height[j] <= hj) j--;
-        if (i == j || height[j] == hj) break;
+        while (i < j && height[i] <= hi) {
+          i++;
+        }
+        if (i == j || height[i] == hi) {
+          break;
+        }
+      }
+      else {
+        while (i < j && height[j] <= hj) {
+          j--;
+        }
+        if (i == j || height[j] == hj) {
+          break;
+        }
       }
     }
-
     return max;
   }
 
@@ -100,9 +127,7 @@ public class ContainerWithMostWater {
     int len = height.length;
     int[] left = new int[len];
     int[] right = new int[len];
-
     ArrayDeque<Integer> q = new ArrayDeque<Integer>();
-
     for (int i = 0; i < len; i++) {
       while (!q.isEmpty() && height[q.peekLast()] < height[i]) {
         q.removeLast();
@@ -110,7 +135,6 @@ public class ContainerWithMostWater {
       left[i] = q.isEmpty() ? 0 : (i - q.peekFirst());
       q.addLast(i);
     }
-
     q.clear();
     for (int i = len - 1; i >= 0; i--) {
       while (!q.isEmpty() && height[q.peekLast()] < height[i]) {
@@ -124,7 +148,6 @@ public class ContainerWithMostWater {
       area = (left[i] + right[i]) * height[i];
       max = max > area ? max : area;
     }
-
     return max;
   }
 }

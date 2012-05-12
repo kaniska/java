@@ -19,7 +19,9 @@ public class RedBlackTree {
   }
 
   public RBT copyRed(RBT root) {
-    if (root == null) return null;
+    if (root == null) {
+      return null;
+    }
     RBT left = root.left == null ? null : copyRed(root.left);
     RBT right = root.right == null ? null : copyRed(root.right);
     RBT rbt = null;
@@ -30,5 +32,4 @@ public class RedBlackTree {
     }
     return rbt;
   }
-
 }

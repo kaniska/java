@@ -8,9 +8,16 @@ public class SimplifyPath {
     String[] p = path.split("/");
     for (String s : p) {
       if (s.equals("..")) {
-        if (!d.isEmpty()) d.removeLast();
-      } else if (s.length() == 0 || s.equals(".")) continue;
-      else d.addLast(s);
+        if (!d.isEmpty()) {
+          d.removeLast();
+        }
+      }
+      else if (s.length() == 0 || s.equals(".")) {
+        continue;
+      }
+      else {
+        d.addLast(s);
+      }
     }
     StringBuffer sb = new StringBuffer();
     while (!d.isEmpty()) {
