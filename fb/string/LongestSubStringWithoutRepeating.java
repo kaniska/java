@@ -5,7 +5,30 @@ package fb.string;
  */
 public class LongestSubStringWithoutRepeating {
 
+  public static void main(String[] args) {
+    System.out.println(new LongestSubStringWithoutRepeating().lengthOfLongestSubstring("inprobabilitytheoryandstatisticsamedianisdescribedasthenumericvalueseparating"));
+  }
+
   public int lengthOfLongestSubstring(String s) {
+    if (s==null) return 0;
+    int len = s.length();
+    if (len==0) return 0;
+    int start = 0;
+    int max = 1;
+    for (int i=1;i<len;i++) {
+      for (int j=i-1;j>=start;j--) {
+        if (s.charAt(j)==s.charAt(i)) {
+          start = j +1;
+          break;
+        }
+      }
+      max = Math.max(max,i-start+1);
+    }
+    return max;
+  }
+
+
+  public int lengthOfLongestSubstring2(String s) {
     if (s == null || s.length() == 0) {
       return 0;
     }

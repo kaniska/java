@@ -3,7 +3,13 @@ package fb.string;
 /**
  * @author jbu
  */
-public class LongestPalindrome {
+
+public interface LongestPalindrome {
+  String longestPalindrome(String s);
+}
+
+
+class LongestPalindrome_DP implements LongestPalindrome {
 
   /**
    * O(n^2) space and O(n^2) time
@@ -39,13 +45,17 @@ public class LongestPalindrome {
     return s.substring(start, start + max);
   }
 
+}
+
+class LongestPalindrome_Iterative implements LongestPalindrome {
+
   /**
    * O(n^2) time but O(1) space
    *
    * @param s
    * @return
    */
-  public String longestPalindrome2(String s) {
+  public String longestPalindrome(String s) {
     int len = s.length();
     int max = 0;
     String maxString = "";
