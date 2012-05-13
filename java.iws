@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4515f29-27fd-4332-95a6-d4a8833c9049" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fb/permutation/CombinationOfPhoneNumber.java" afterPath="$PROJECT_DIR$/fb/permutation/PhoneNumberWords.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/permutation/CombinationOfPhoneNumberRecursive.java" afterPath="$PROJECT_DIR$/fb/permutation/CombinationOfPhoneNumberRecursive.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/string/LongestCommonPrefix.java" afterPath="$PROJECT_DIR$/fb/string/LongestCommonPrefix.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/string/LongestPalindrome.java" afterPath="$PROJECT_DIR$/fb/string/LongestPalindrome.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/string/LongestSubStringWithoutRepeating.java" afterPath="$PROJECT_DIR$/fb/string/LongestSubStringWithoutRepeating.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java.iws" afterPath="$PROJECT_DIR$/java.iws" />
     </list>
     <ignored path="java.iws" />
@@ -97,7 +92,7 @@
       <file leaf-file-name="LongestValidParenthesis.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fb/string/LongestValidParenthesis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="174" selection-start="786" selection-end="786" vertical-scroll-proportion="0.73426574">
+            <state line="20" column="16" selection-start="662" selection-end="662" vertical-scroll-proportion="0.5244755">
               <folding>
                 <element signature="e#452#461#0" expanded="true" />
               </folding>
@@ -577,7 +572,11 @@
       <created>1336865146408</created>
       <updated>1336865146408</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update">
+      <created>1336875997328</created>
+      <updated>1336875997328</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -763,7 +762,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fb/string/LongestValidParenthesis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="174" selection-start="786" selection-end="786" vertical-scroll-proportion="0.73426574">
+        <state line="20" column="16" selection-start="662" selection-end="662" vertical-scroll-proportion="0.5244755">
           <folding>
             <element signature="e#452#461#0" expanded="true" />
           </folding>
