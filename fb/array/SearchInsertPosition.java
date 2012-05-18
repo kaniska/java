@@ -10,10 +10,7 @@ public class SearchInsertPosition {
   }
 
   private int search(int[] A, int i, int j, int target) {
-    if (i > j) {
-      return i;
-    }
-    if (i == j) {
+    if (i >= j) {
       if (target <= A[i]) {
         return i;
       }

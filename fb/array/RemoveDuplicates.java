@@ -1,23 +1,16 @@
 package fb.array;
 
 /**
- * @author jbu
+ * @author mindpower
  */
 public class RemoveDuplicates {
   public int removeDuplicates(int[] A) {
-    if (A.length < 2) {
-      return A.length;
+    if (A==null || A.length==0) return 0;
+    int k = 1;
+    for (int i=1;i<A.length;i++) {
+      if (A[i]!=A[i-1]) A[k++]=A[i];
     }
-    int cur = 1;
-    for (int i = 1; i < A.length; i++) {
-      if (A[i] == A[i - 1]) {
-        continue;
-      }
-      else {
-        A[cur++] = A[i];
-      }
-    }
-    return cur;
+    return k;
   }
 
   public int removeDuplicatesTwice(int[] A) {

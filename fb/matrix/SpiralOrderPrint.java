@@ -55,40 +55,23 @@ public class SpiralOrderPrint {
    */
   public ArrayList<Integer> spiralOrder(int[][] matrix) {
     ArrayList<Integer> result = new ArrayList<Integer>();
-    if (matrix.length == 0) {
-      return result;
-    }
-    int m = matrix.length, n = matrix[0].length;
-    int si = 0, sj = 0, ei = m - 1, ej = n - 1;
-    while (si <= ei && sj <= ej) {
-      if (si == ei) {
-        for (int j = sj; j <= ej; j++) {
-          result.add(matrix[si][j]);
-        }
+    if (matrix==null || matrix.length==0) return result;
+    int x1=0,y1=0, x2=matrix[0].length-1, y2=matrix.length-1;
+    while (x1<=x2 && y1<=y2) {
+    // I use while (true) first, which causes infinite loop since (x1==x2) or (y1==y2) aren't always true unless there are odd number of rows or cols
+      if (x1==x2) {
+        for (int row=y1;row<=y2;row++) result.add(matrix[row][x1]);
         break;
       }
-      if (sj == ej) {
-        for (int i = si; i <= ei; i++) {
-          result.add(matrix[i][sj]);
-        }
+      if (y1==y2) {
+        for (int col=x1;col<=x2;col++) result.add(matrix[y1][col]);
         break;
       }
-      for (int j = sj; j <= ej; j++) {
-        result.add(matrix[si][j]);
-      }
-      for (int i = si + 1; i < ei; i++) {
-        result.add(matrix[i][ej]);
-      }
-      for (int j = ej; j >= sj; j--) {
-        result.add(matrix[ei][j]);
-      }
-      for (int i = ei - 1; i > si; i--) {
-        result.add(matrix[i][sj]);
-      }
-      si++;
-      sj++;
-      ei--;
-      ej--;
+      for (int col=x1;col<=x2;col++) result.add(matrix[y1][col]);
+      for (int row=y1+1;row<y2;row++) result.add(matrix[row][x2]);
+      for (int col=x2;col>=x1;col--) result.add(matrix[y2][col]);
+      for (int row=y2-1;row>y1;row--) result.add(matrix[row][x1]);
+      x1++;y1++;x2--;y2--;
     }
     return result;
   }

@@ -23,7 +23,7 @@ public class Roman {
     int r = 0, cur = 0;
     for (int i = 0; i < ROMAN.length; i++) {
 //          if (cur==s.length()) break;
-      while (cur < s.length() && s.substring(cur).startsWith(ROMAN[i])) {
+      while (cur < s.length() && s.startsWith(ROMAN[i],cur)) {
         r += N[i];
         cur += ROMAN[i].length();
       }

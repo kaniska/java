@@ -46,4 +46,34 @@ public class SubstringWithConcatenationWords {
     }
     return r;
   }
+
+  /**
+   * 05/17/2012
+   */
+  public ArrayList<Integer> findSubstring2(String S, String[] L) {
+    ArrayList<Integer> result = new ArrayList<Integer>();
+    HashMap<String, Integer> needFind = new HashMap<String, Integer>();
+    HashMap<String, Integer> hasFound = new HashMap<String, Integer>();
+    int m=S.length(), n = L.length, len = L[0].length();
+    for (int i = 0; i < n; i++) {
+      Integer count = needFind.get(L[i]);
+      needFind.put(L[i], count == null ? 1 : count + 1);
+    }
+    for (int i = 0; i < m - n * len + 1; i++) {
+      if (needFind.containsKey(S.substring(i, i + len))) {
+        hasFound.clear();
+        hasFound.put(S.substring(i, i + len), 1);
+        int j = 0;
+        for (j = i + len; j < i + n * len; j += len) {
+          String sub = S.substring(j, j + len);
+          if (!needFind.containsKey(sub)) break;
+          Integer count = hasFound.get(sub);
+          hasFound.put(sub, count == null ? 1 : count + 1);
+          if (hasFound.get(sub) > needFind.get(sub)) break;
+        }
+        if (j == i + n * len) result.add(i);
+      }
+    }
+    return result;
+  }
 }

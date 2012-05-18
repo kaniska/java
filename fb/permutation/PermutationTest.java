@@ -62,7 +62,7 @@ public class PermutationTest {
   }
 
   public static void main(String args[]) {
-    String s = "abcdefgh";
+    String s = "abcdefghijkkk";
     char[] s1 = s.toCharArray();
     long start = System.currentTimeMillis();
     int cc = 0;

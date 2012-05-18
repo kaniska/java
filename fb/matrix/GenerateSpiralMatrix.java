@@ -9,38 +9,24 @@ import java.util.*;
 public class GenerateSpiralMatrix {
   public int[][] generateMatrix(int n) {
     int[][] matrix = new int[n][n];
-    int k = 1;
-    int x1 = 0, y1 = 0, x2 = n - 1, y2 = n - 1;
-    while (x1 <= x2 && y1 <= y2) {
-      if (x1 == x2) {
-        for (int j = y1; j <= y2; j++) {
-          matrix[x1][j] = k++;
-        }
+    int x1=0,y1=0, x2=n-1, y2=n-1;
+    int number = 1;
+    while (x1<=x2 && y1<=y2) {
+      if (x1==x2) {
+        for (int row=y1;row<=y2;row++) matrix[row][x1]=number++;
         break;
       }
-      if (y1 == y2) {
-        for (int i = x1; i <= x2; i++) {
-          matrix[i][y1] = k++;
-        }
+      if (y1==y2) {
+        for (int col=x1;col<=x2;col++) matrix[y1][col]=number++;
         break;
       }
-      for (int j = y1; j <= y2; j++) {
-        matrix[x1][j] = k++;
-      }
-      for (int i = x1 + 1; i < x2; i++) {
-        matrix[i][y2] = k++;
-      }
-      for (int j = y2; j >= y1; j--) {
-        matrix[x2][j] = k++;
-      }
-      for (int i = x2 - 1; i > x1; i--) {
-        matrix[i][y1] = k++;
-      }
-      x1++;
-      y1++;
-      x2--;
-      y2--;
+      for (int col=x1;col<=x2;col++) matrix[y1][col]=number++;
+      for (int row=y1+1;row<y2;row++) matrix[row][x2]=number++;
+      for (int col=x2;col>=x1;col--) matrix[y2][col]=number++;
+      for (int row=y2-1;row>y1;row--) matrix[row][x1]=number++;
+      x1++;y1++;x2--;y2--;
     }
     return matrix;
+
   }
 }

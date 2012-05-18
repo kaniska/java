@@ -21,6 +21,7 @@ public class Power {
       r = x * pow(x, n - 1);
     }
     else {
+      System.out.println("x="+x+"  n="+n+"("+Integer.toBinaryString(n));
       double p = pow(x, n >> 1);
       r = p * p;
     }
@@ -28,7 +29,10 @@ public class Power {
   }
 
   public static void main(String args[]) {
-    System.out.println("92181.12312^12=" + Math.pow(92181.12312, 12) + "/" + pow(92181.12312, 12));
-    System.out.println("22.332^-8=" + Math.pow(22.332, -8) + "/" + pow(22.332, -8));
+//    System.out.println("92181.12312^12=" + Math.pow(92181.12312, 12) + "/" + pow(92181.12312, 12));
+//    System.out.println("22.332^-8=" + Math.pow(22.332, -8) + "/" + pow(22.332, -8));
+    System.out.println("1^-MIN=" + pow(1, Integer.MIN_VALUE) );
+
+    System.out.println(Integer.toBinaryString(Integer.MIN_VALUE)+ "\t" + Math.abs(Integer.MIN_VALUE));
   }
 }
