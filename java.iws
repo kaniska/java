@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4515f29-27fd-4332-95a6-d4a8833c9049" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fb/math/Multiplication.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/dp/EditDistance.java" afterPath="$PROJECT_DIR$/fb/dp/EditDistance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/math/Multiply.java" afterPath="$PROJECT_DIR$/fb/math/Multiply.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/string/MinimumWindowSubstring.java" afterPath="$PROJECT_DIR$/fb/string/MinimumWindowSubstring.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/string/ZigZagConversion.java" afterPath="$PROJECT_DIR$/fb/string/ZigZagConversion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/list/RotateList.java" afterPath="$PROJECT_DIR$/fb/list/RotateList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/matrix/SearchInMatrix.java" afterPath="$PROJECT_DIR$/fb/matrix/SearchInMatrix.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/permutation/SubSet.java" afterPath="$PROJECT_DIR$/fb/permutation/SubSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/string/TextJustification.java" afterPath="$PROJECT_DIR$/fb/string/TextJustification.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java.iws" afterPath="$PROJECT_DIR$/java.iws" />
     </list>
     <ignored path="java.iws" />
@@ -65,33 +64,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ValidNumber.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/math/ValidNumber.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidParentheses.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/string/ValidParentheses.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidSudoku.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/puzzle/ValidSudoku.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="48" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WordSearchInMatrix.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fb/matrix/WordSearchInMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,7 +76,7 @@
       <file leaf-file-name="ZigZagConversion.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fb/string/ZigZagConversion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="49" selection-start="934" selection-end="934" vertical-scroll-proportion="0.0">
+            <state line="26" column="30" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,7 +85,7 @@
       <file leaf-file-name="EditDistance.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fb/dp/EditDistance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="182" selection-end="626" vertical-scroll-proportion="0.0">
+            <state line="8" column="0" selection-start="158" selection-end="701" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -131,16 +103,54 @@
       <file leaf-file-name="MinimumWindowSubstring.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fb/string/MinimumWindowSubstring.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="76" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
+            <state line="35" column="76" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Multiply.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Multiply.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fb/math/Multiply.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="3" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.7902098">
+            <state line="28" column="33" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextJustification.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/string/TextJustification.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="0" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1466#1474#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubSet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/permutation/SubSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="3" selection-start="966" selection-end="966" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchInMatrix.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/matrix/SearchInMatrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="25" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RotateList.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fb/list/RotateList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="16" selection-start="634" selection-end="634" vertical-scroll-proportion="0.8123791">
               <folding />
             </state>
           </provider>
@@ -162,10 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/fb/list/RemoveNthFromEnd.java" />
-        <option value="$PROJECT_DIR$/fb/math/Roman.java" />
-        <option value="$PROJECT_DIR$/fb/array/SearchRotated.java" />
-        <option value="$PROJECT_DIR$/fb/array/SearchInRotated2.java" />
         <option value="$PROJECT_DIR$/fb/array/SearchInsertPosition.java" />
         <option value="$PROJECT_DIR$/fb/matrix/SetMatrixZero.java" />
         <option value="$PROJECT_DIR$/fb/matrix/SpiralOrderPrint.java" />
@@ -178,6 +184,10 @@
         <option value="$PROJECT_DIR$/fb/dp/EditDistance.java" />
         <option value="$PROJECT_DIR$/fb/string/MinimumWindowSubstring.java" />
         <option value="$PROJECT_DIR$/fb/math/Multiply.java" />
+        <option value="$PROJECT_DIR$/fb/string/TextJustification.java" />
+        <option value="$PROJECT_DIR$/fb/permutation/SubSet.java" />
+        <option value="$PROJECT_DIR$/fb/matrix/SearchInMatrix.java" />
+        <option value="$PROJECT_DIR$/fb/list/RotateList.java" />
       </list>
     </option>
   </component>
@@ -282,7 +292,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="math" />
+              <option name="myItemId" value="matrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="list" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -635,7 +663,11 @@
       <created>1337356485010</created>
       <updated>1337356485010</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update">
+      <created>1337387378840</created>
+      <updated>1337387378840</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -663,30 +695,30 @@
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.49509802" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32938388" sideWeight="0.49264705" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3992891" sideWeight="0.70955884" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.264218" sideWeight="0.41789216" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32938388" sideWeight="0.50306374" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13033175" sideWeight="0.49264705" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.48039216" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.49754903" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2077206" sideWeight="0.73578197" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2077206" sideWeight="0.6706161" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.264218" sideWeight="0.57781863" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.49754903" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.49509802" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.48039216" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -695,8 +727,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <value>
         <are-packages-shown value="false" />
@@ -729,9 +761,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
     <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
     <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
@@ -751,21 +783,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fb/list/SwapPairs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fb/puzzle/SolveSudoku.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fb/puzzle/SolveSudoku2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fb/puzzle/TrapRunningWater.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" />
@@ -803,14 +820,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fb/string/ZigZagConversion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="49" selection-start="934" selection-end="934" vertical-scroll-proportion="0.0">
+        <state line="26" column="30" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fb/dp/EditDistance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="182" selection-end="626" vertical-scroll-proportion="0.0">
+        <state line="8" column="0" selection-start="158" selection-end="701" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -824,14 +841,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fb/string/MinimumWindowSubstring.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="76" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
+        <state line="35" column="76" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fb/math/Multiply.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="3" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.7902098">
+        <state line="28" column="33" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/string/TextJustification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="0" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1466#1474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/permutation/SubSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="3" selection-start="966" selection-end="966" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/matrix/SearchInMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="25" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/list/RotateList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="16" selection-start="634" selection-end="634" vertical-scroll-proportion="0.8123791">
           <folding />
         </state>
       </provider>

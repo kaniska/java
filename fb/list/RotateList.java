@@ -11,32 +11,23 @@ import java.util.*;
 public class RotateList {
 
   public ListNode rotateList(ListNode head, int n) {
-    if (n == 0) {
-      return head;
-    }
-    if (head == null || head.next == null) {
-      return head;
-    }
-    // number of nodes >=2 and n>=1
-    // take n mod [list]
+    if (n == 0) return head;
+    if (head == null || head.next == null) return head;
     ListNode cur = head;
-    int total = 0;
-    ListNode last = null;
-    while (cur != null) {
-      total++;
-      last = cur;
+    int count = 0;
+    while (cur.next != null) {
       cur = cur.next;
+      count++;
     }
-    n = n % total;
-    if (n == 0) {
-      return head;
-    }
-    int i = 0;
+    count++;
+    ListNode tail = cur;
+    n = n % count;
+    if (n == 0) return head;
     cur = head;
-    while (++i < total - n) {
+    for (int i = 0; i < count - n - 1; i++) {
       cur = cur.next;
     }
-    last.next = head;
+    tail.next = head;
     head = cur.next;
     cur.next = null;
     return head;

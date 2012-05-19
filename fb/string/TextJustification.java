@@ -33,6 +33,37 @@ import java.util.*;
  * @created: 4/22/12-12:58 PM
  */
 public class TextJustification {
+
+  // 05/18/2012
+  public ArrayList<String> fullJustifySimple(String[] words, int L) {
+    ArrayList<String> result = new ArrayList<String>();
+    int cur = 0, remaining, start = 0;
+    while (cur < words.length) {
+      start = cur;
+      remaining = L - words[cur++].length();
+      while (cur < words.length && remaining >= (words[cur].length() + 1)) {
+        remaining -= (words[cur++].length() + 1);
+      }
+      StringBuilder sb = new StringBuilder(words[start]);
+      int numOfWords = cur - start;
+      boolean noExtraSpace = (cur == words.length || (numOfWords == 1)); // last line or only one word
+      for (int i = start + 1; i < cur; i++) {
+        int numOfSpaces = 1;
+        if (!noExtraSpace) {
+          numOfSpaces += remaining / (numOfWords - 1);
+          if (remaining % (numOfWords - 1) > (i - start - 1)) numOfSpaces++;
+        }
+        for (int j = 0; j < numOfSpaces; j++) sb.append(' ');
+        sb.append(words[i]);
+      }
+      if (noExtraSpace) {
+        for (int j = 0; j < remaining; j++) sb.append(' ');
+      }
+      result.add(sb.toString());
+    }
+    return result;
+  }
+
   public ArrayList<String> fullJustify(String[] words, int L) {
     int i = 0, n = words.length;
     ArrayList<String> result = new ArrayList<String>();
