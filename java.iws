@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4515f29-27fd-4332-95a6-d4a8833c9049" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/list/RotateList.java" afterPath="$PROJECT_DIR$/fb/list/RotateList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/matrix/SearchInMatrix.java" afterPath="$PROJECT_DIR$/fb/matrix/SearchInMatrix.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/permutation/SubSet.java" afterPath="$PROJECT_DIR$/fb/permutation/SubSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/string/TextJustification.java" afterPath="$PROJECT_DIR$/fb/string/TextJustification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/string/ScrambleString.java" afterPath="$PROJECT_DIR$/fb/string/ScrambleString.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java.iws" afterPath="$PROJECT_DIR$/java.iws" />
     </list>
     <ignored path="java.iws" />
@@ -64,15 +61,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WordSearchInMatrix.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/matrix/WordSearchInMatrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="16" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ZigZagConversion.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fb/string/ZigZagConversion.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -121,10 +109,8 @@
       <file leaf-file-name="TextJustification.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fb/string/TextJustification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="0" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#1466#1474#0" expanded="true" />
-              </folding>
+            <state line="62" column="0" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,7 +118,7 @@
       <file leaf-file-name="SubSet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fb/permutation/SubSet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="3" selection-start="966" selection-end="966" vertical-scroll-proportion="0.0">
+            <state line="43" column="3" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -147,10 +133,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RotateList.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RotateList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fb/list/RotateList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="16" selection-start="634" selection-end="634" vertical-scroll-proportion="0.8123791">
+            <state line="32" column="16" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScrambleString.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fb/string/ScrambleString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="28" selection-start="1690" selection-end="1690" vertical-scroll-proportion="0.43141592">
               <folding />
             </state>
           </provider>
@@ -172,7 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/fb/array/SearchInsertPosition.java" />
         <option value="$PROJECT_DIR$/fb/matrix/SetMatrixZero.java" />
         <option value="$PROJECT_DIR$/fb/matrix/SpiralOrderPrint.java" />
         <option value="$PROJECT_DIR$/fb/matrix/GenerateSpiralMatrix.java" />
@@ -188,13 +182,15 @@
         <option value="$PROJECT_DIR$/fb/permutation/SubSet.java" />
         <option value="$PROJECT_DIR$/fb/matrix/SearchInMatrix.java" />
         <option value="$PROJECT_DIR$/fb/list/RotateList.java" />
+        <option value="$PROJECT_DIR$/fb/string/ScrambleString.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1680" />
-    <option name="height" value="965" />
+    <option name="x" value="1680" />
+    <option name="y" value="150" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -292,25 +288,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="matrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="list" />
+              <option name="myItemId" value="string" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -667,7 +645,11 @@
       <created>1337387378840</created>
       <updated>1337387378840</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update">
+      <created>1337397441986</created>
+      <updated>1337397441986</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -691,18 +673,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="965" extended-state="0" />
+    <frame x="1680" y="150" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32938388" sideWeight="0.49264705" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3568678" sideWeight="0.4920977" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3992891" sideWeight="0.70955884" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32938388" sideWeight="0.50306374" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3568678" sideWeight="0.50287354" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13033175" sideWeight="0.49264705" order="7" side_tool="false" content_ui="tabs" />
@@ -712,7 +694,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2077206" sideWeight="0.6706161" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24353448" sideWeight="0.6431322" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.264218" sideWeight="0.57781863" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.49754903" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -761,7 +743,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -783,11 +765,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fb/puzzle/TrapRunningWater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fb/dp/UniquePath.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" />
@@ -855,16 +832,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fb/string/TextJustification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1466#1474#0" expanded="true" />
-          </folding>
+        <state line="62" column="0" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fb/permutation/SubSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="3" selection-start="966" selection-end="966" vertical-scroll-proportion="0.0">
+        <state line="43" column="3" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -878,7 +853,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fb/list/RotateList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="16" selection-start="634" selection-end="634" vertical-scroll-proportion="0.8123791">
+        <state line="32" column="16" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/string/ScrambleString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="28" selection-start="1690" selection-end="1690" vertical-scroll-proportion="0.43141592">
           <folding />
         </state>
       </provider>
