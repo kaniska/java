@@ -20,27 +20,21 @@ package fb.math;
  */
 public class Multiply {
   public String multiply(String num1, String num2) {
-    int len1 = num1.length(), len2 = num2.length();
-    char[] r = new char[len1 + len2];
-    for (int i = 0; i < r.length; i++) {
-      r[i] = '0';
-    }
-    for (int i = len1 - 1; i >= 0; i--) {
-      int j = 0, carry = 0;
-      for (j = len2 - 1; j >= 0; j--) {
-        int x = (num1.charAt(i) - '0') * (num2.charAt(j) - '0') + (r[1 + i + j] - '0') + carry;
-        r[1 + i + j] = (char) (x % 10 + '0');
-        carry = x / 10;
+    int n1 = num1.length(), n2 = num2.length();
+    int[] result = new int[n1 + n2];
+    for (int i = n1 - 1; i >= 0; i--) {
+      int carry = 0, j, t;
+      for (j = n2 - 1; j >= 0; j--) {
+        t = carry + result[i + j + 1] + (num1.charAt(i) - '0') * (num2.charAt(j) - '0');
+        result[i + j + 1] = t % 10;
+        carry = t / 10;
       }
-      r[i] = (char) (carry + '0');
+      result[i + j + 1] = carry;
     }
-    int s = 0;
-    while (s < r.length && r[s] == '0') {
-      s++;
-    }
-    if (s == r.length) {
-      return "0";
-    }
-    return new String(r).substring(s);
+    StringBuilder sb = new StringBuilder();
+    int i = 0;
+    while (i < result.length - 1 && result[i] == 0) i++;
+    while (i < result.length) sb.append((char) (result[i++] + '0'));
+    return sb.toString();
   }
 }

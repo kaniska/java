@@ -11,29 +11,21 @@ public class ZigZagConversion {
   }
 
   public String convert(String s, int nRows) {
-    if (nRows == 1) {
-      return s;
-    }
-    int n = s.length();
-    int nCols = n / (2 * (nRows - 1)) * (nRows - 1);
-    int remaining = n % (2 * (nRows - 1));
-    nCols = nCols + (remaining > (nRows - 1) ? remaining - (nRows - 1) : 1);
-    char[][] z = new char[nRows][nCols];
-    int i = 0, j = 0, col = 0, row = 0;
-    while (i < n) {
-      while (i < n && row < nRows - 1) {
-        z[row++][col] = s.charAt(i++);
-      }
-      while (i < n && row > 0) {
-        z[row--][col++] = s.charAt(i++);
-      }
+    if (nRows == 1) return s;
+    int len = s.length();
+    int cols = len / (2 * nRows - 2) * (nRows - 1);
+    int remain = len % (2 * nRows - 2);
+    cols += (remain < nRows ? 1 : (remain - nRows + 1));
+    char[][] lines = new char[nRows][cols];
+    int i = 0, j = 0, row = 0, col = 0;
+    while (i < s.length()) {
+      while (i < s.length() && row < nRows - 1) lines[row++][col] = s.charAt(i++);
+      while (i < s.length() && row > 0) lines[row--][col++] = s.charAt(i++);
     }
     StringBuilder sb = new StringBuilder();
     for (i = 0; i < nRows; i++) {
-      for (j = 0; j < nCols; j++) {
-        if (z[i][j] != 0) {
-          sb.append(z[i][j]);
-        }
+      for (j = 0; j < cols; j++) {
+        if (lines[i][j] != 0) sb.append(lines[i][j]);
       }
     }
     return sb.toString();

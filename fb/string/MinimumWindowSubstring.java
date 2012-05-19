@@ -1,6 +1,9 @@
 package fb.string;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Minimum Window Substring
@@ -29,6 +32,38 @@ import java.util.*;
  * (4) We use an additional deque to track positions for only those elements in T
  */
 public class MinimumWindowSubstring {
+  // 05/18/2012 simple version without using queue,
+  // just search from start to remove chars not needed, so total time O(2*n)
+  public String minWindowSimple(String S, String T) {
+    int[] needFind = new int[256];
+    int[] hasFound = new int[256];
+    int n = T.length();
+    if (n == 0) return "";
+    for (int i = 0; i < n; i++) needFind[T.charAt(i)]++;
+    int count = 0;
+    int start = 0;
+    int min = Integer.MAX_VALUE;
+    String minString = "";
+    for (int i = 0; i < S.length(); i++) {
+      char c = S.charAt(i);
+      if (needFind[c] == 0) continue;
+      hasFound[c]++;
+      if (hasFound[c] <= needFind[c]) count++;
+      if (count < n) continue;
+      while (true) {
+        char s = S.charAt(start);
+        if (needFind[s] != 0 && needFind[s] >= hasFound[s]) break;
+        start++;
+        hasFound[s]--;
+      }
+      if (i - start + 1 < min) {
+        min = i - start + 1;
+        minString = S.substring(start, i + 1);
+      }
+    }
+    return minString;
+  }
+
   String minWindow(String S, String T) {
     Deque<Integer> d = new ArrayDeque<Integer>();
     int[] needToFind = new int[256];
