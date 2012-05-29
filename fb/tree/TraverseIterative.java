@@ -64,7 +64,7 @@ public class TraverseIterative {
     while (!s.isEmpty()) {
       Node p = s.pop();
       System.out.print(p.s + " ");
-      while (p.right != null) {
+      if (p.right != null) {
         Node pr = p.right;
         while (pr != null) {
           s.push(pr);
@@ -141,7 +141,7 @@ public class TraverseIterative {
     System.out.print("\nIn Order  ==> ");
     inOrderIterative(root);
     System.out.print("\nIn Order withou set ==> ");
-    inOrderIterative(root);
+    inOrderIterativeWithoutSet(root);
     System.out.print("\nPost Order  ==> ");
     postOrderIterative(root);
     System.out.print("\nPost Order without set  ==> ");

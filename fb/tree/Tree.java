@@ -67,5 +67,21 @@ class Node {
   Node(String s) {
     this.s = s;
   }
+
+  boolean hasLeftChild() {
+    return left != null;
+  }
+
+  boolean hasRightChild() {
+    return right != null;
+  }
+
+  Node leftChild() {
+    return left;
+  }
+
+  Node rightChild() {
+    return right;
+  }
 }
 
