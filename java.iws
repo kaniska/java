@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4515f29-27fd-4332-95a6-d4a8833c9049" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/design/BlockingQueue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/list/PartitionList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/list/RemoveAllDuplicatesFromList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/tree/FindSecondLargest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/ListNode.java" afterPath="$PROJECT_DIR$/fb/ListNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/list/RemoveDuplicatesFromList.java" afterPath="$PROJECT_DIR$/fb/list/RemoveDuplicatesFromList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/string/RPN.java" afterPath="$PROJECT_DIR$/fb/string/RPN.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/tree/TraverseIterative.java" afterPath="$PROJECT_DIR$/fb/tree/TraverseIterative.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/tree/Tree.java" afterPath="$PROJECT_DIR$/fb/tree/Tree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/dp/ParenthesesPlace.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/graph/Toposort.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/prob/Markov.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/tree/BinaryTreeString.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fb/tree/FindSecondLargest.java" afterPath="$PROJECT_DIR$/fb/tree/FindSecondLargest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java.ipr" afterPath="$PROJECT_DIR$/java.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java.iws" afterPath="$PROJECT_DIR$/java.iws" />
     </list>
     <ignored path="java.iws" />
@@ -30,7 +27,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/fb/list/PartitionList.java" line="33" class="fb.list.PartitionList" package="fb.list">
+      <breakpoint url="file://$PROJECT_DIR$/fb/list/PartitionList.java" line="32" class="fb.list.PartitionList" package="fb.list">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -84,19 +81,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CircularSortedSearch.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/array/CircularSortedSearch.java">
+      <file leaf-file-name="Toposort.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/graph/Toposort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+            <state line="86" column="5" selection-start="1961" selection-end="1961" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RotateArray.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/array/RotateArray.java">
+      <file leaf-file-name="ParenthesesPlace.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/dp/ParenthesesPlace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+            <state line="43" column="29" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,55 +108,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Anagrams.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/string/Anagrams.java">
+      <file leaf-file-name="MedianOfTwoSorted.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/array/MedianOfTwoSorted.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+            <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TraverseIterative.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/tree/TraverseIterative.java">
+      <file leaf-file-name="SearchInMatrix.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/matrix/SearchInMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="42" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0">
+            <state line="24" column="13" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tree.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fb/tree/Tree.java">
+      <file leaf-file-name="MaximalRectangle.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/matrix/MaximalRectangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="21" selection-start="219" selection-end="219" vertical-scroll-proportion="0.5767442">
+            <state line="61" column="0" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProbAny_DataMining.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/prob/ProbAny_DataMining.java">
+      <file leaf-file-name="Markov.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fb/prob/Markov.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+            <state line="83" column="0" selection-start="2654" selection-end="2654" vertical-scroll-proportion="0.07334963">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProbAny_Junjie.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/prob/ProbAny_Junjie.java">
+      <file leaf-file-name="MedianOfTwoSortedBinarySearch.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/array/MedianOfTwoSortedBinarySearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="11" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+            <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProbAny_Peking.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb/prob/ProbAny_Peking.java">
+      <file leaf-file-name="BinaryTreeString.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fb/tree/BinaryTreeString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+            <state line="38" column="71" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -168,7 +165,7 @@
       <file leaf-file-name="ProbHalf.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fb/prob/ProbHalf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="41" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+            <state line="30" column="18" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -190,10 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/fb/string/MinimumWindowSubstring.java" />
-        <option value="$PROJECT_DIR$/fb/math/Multiply.java" />
-        <option value="$PROJECT_DIR$/fb/string/TextJustification.java" />
-        <option value="$PROJECT_DIR$/fb/permutation/SubSet.java" />
         <option value="$PROJECT_DIR$/fb/matrix/SearchInMatrix.java" />
         <option value="$PROJECT_DIR$/fb/list/RotateList.java" />
         <option value="$PROJECT_DIR$/fb/string/ScrambleString.java" />
@@ -202,17 +195,22 @@
         <option value="$PROJECT_DIR$/fb/list/RemoveDuplicatesFromList.java" />
         <option value="$PROJECT_DIR$/fb/list/RemoveAllDuplicatesFromList.java" />
         <option value="$PROJECT_DIR$/fb/string/RPN.java" />
-        <option value="$PROJECT_DIR$/fb/tree/FindSecondLargest.java" />
-        <option value="$PROJECT_DIR$/fb/tree/Tree.java" />
         <option value="$PROJECT_DIR$/fb/design/BlockingQueue.java" />
         <option value="$PROJECT_DIR$/fb/tree/TraverseIterative.java" />
+        <option value="$PROJECT_DIR$/fb/tree/Tree.java" />
+        <option value="$PROJECT_DIR$/fb/tree/BinaryTreeString.java" />
+        <option value="$PROJECT_DIR$/fb/tree/FindSecondLargest.java" />
+        <option value="$PROJECT_DIR$/fb/graph/Toposort.java" />
+        <option value="$PROJECT_DIR$/fb/dp/ParenthesesPlace.java" />
+        <option value="$PROJECT_DIR$/fb/prob/Markov.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="122" />
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="815" />
+    <option name="width" value="1680" />
+    <option name="height" value="965" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -250,20 +248,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IntelliJ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -294,6 +278,38 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="fb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IntelliJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -345,109 +361,103 @@
     <option name="referencePos" value="0" />
     <option name="showLabels" value="true" />
   </component>
-  <component name="RunManager" selected="Application.TraverseIterative">
-    <configuration default="false" name="PartitionList" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="fb.list.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="fb.list.PartitionList" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="IntelliJ" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="RPN" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="fb.string.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="fb.string.RPN" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="IntelliJ" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ProbHalf" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="fb.prob.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="fb.prob.ProbHalf" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="IntelliJ" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ProbAny" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="fb.prob.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="fb.prob.ProbAny" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="IntelliJ" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TraverseIterative" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.Markov">
+    <configuration default="false" name="BinaryTreeString" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="fb.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="fb.tree.TraverseIterative" />
+      <option name="MAIN_CLASS_NAME" value="fb.tree.BinaryTreeString" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="IntelliJ" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Toposort" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="fb.graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="fb.graph.Toposort" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="IntelliJ" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParenthesesPlace" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="fb.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="fb.dp.ParenthesesPlace" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="IntelliJ" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MaximalRectangle" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="fb.matrix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="fb.matrix.MaximalRectangle" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="IntelliJ" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Markov" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="fb.prob.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="fb.prob.Markov" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -583,11 +593,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.PartitionList" />
-      <item index="1" class="java.lang.String" itemvalue="Application.RPN" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ProbHalf" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ProbAny" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TraverseIterative" />
+      <item index="0" class="java.lang.String" itemvalue="Application.BinaryTreeString" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Toposort" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ParenthesesPlace" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MaximalRectangle" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Markov" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -658,7 +668,11 @@
       <created>1337399170318</created>
       <updated>1337399170318</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="blocking queue/partitionList/removeDuplicatesFromList/FindSecondLargest">
+      <created>1338264265613</created>
+      <updated>1338264265613</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -682,7 +696,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="815" extended-state="0" />
+    <frame x="122" y="22" width="1680" height="965" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -693,18 +707,18 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3992298" sideWeight="0.7054598" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30979827" sideWeight="0.26077586" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45734596" sideWeight="0.27757353" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13033175" sideWeight="0.49264705" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.48039216" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.4779412" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.49754903" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2420977" sideWeight="0.6902017" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30979827" sideWeight="0.7341954" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20281863" sideWeight="0.54265404" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45734596" sideWeight="0.71813726" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938388" sideWeight="0.49754903" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -750,7 +764,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="blocking queue/partitionList/removeDuplicatesFromList/FindSecondLargest" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -765,6 +779,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="added processor" />
     <MESSAGE value="update" />
+    <MESSAGE value="blocking queue/partitionList/removeDuplicatesFromList/FindSecondLargest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -774,44 +789,46 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fb/array/TwoSum.java">
+    <entry file="file://$PROJECT_DIR$/fb/tree/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" />
+        <state line="20" column="21" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/prob/ProbAny.java">
+    <entry file="file://$PROJECT_DIR$/fb/tree/FindSecondLargest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="22" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" />
+        <state line="9" column="60" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/array/MedianOfTwoSorted.java">
+    <entry file="file://$PROJECT_DIR$/fb/tree/minDepth.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="31" selection-start="3599" selection-end="3599" vertical-scroll-proportion="0.0" />
+        <state line="8" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/array/MedianOfTwoSortedBinarySearch.java">
+    <entry file="file://$PROJECT_DIR$/fb/design/BlockingQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" />
+        <state line="8" column="13" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/math/Power.java">
+    <entry file="file://$PROJECT_DIR$/cc/C9_Sort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" />
+        <state line="9" column="13" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/array/FindMaxSum.java">
+    <entry file="file://$PROJECT_DIR$/test/Sort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" />
+        <state line="53" column="33" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/array/CircularSortedSearch.java">
+    <entry file="file://$PROJECT_DIR$/fb/graph/Toposort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" />
+        <state line="86" column="5" selection-start="1961" selection-end="1961" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/array/RotateArray.java">
+    <entry file="file://$PROJECT_DIR$/fb/dp/ParenthesesPlace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" />
+        <state line="43" column="29" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fb/array/SearchRotated.java">
@@ -819,43 +836,43 @@
         <state line="5" column="13" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/prob/ProbAny_DataMining.java">
+    <entry file="file://$PROJECT_DIR$/fb/array/MedianOfTwoSorted.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" />
+        <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/prob/ProbAny_Junjie.java">
+    <entry file="file://$PROJECT_DIR$/fb/matrix/SearchInMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="11" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0" />
+        <state line="24" column="13" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/prob/ProbAny_Peking.java">
+    <entry file="file://$PROJECT_DIR$/fb/array/MedianOfTwoSortedBinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" />
+        <state line="5" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/tree/BinaryTreeString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="71" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fb/prob/ProbHalf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="41" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fb/string/Anagrams.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+        <state line="30" column="18" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/tree/TraverseIterative.java">
+    <entry file="file://$PROJECT_DIR$/fb/matrix/MaximalRectangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="42" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0">
+        <state line="61" column="0" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fb/tree/Tree.java">
+    <entry file="file://$PROJECT_DIR$/fb/prob/Markov.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="21" selection-start="219" selection-end="219" vertical-scroll-proportion="0.5767442">
+        <state line="83" column="0" selection-start="2654" selection-end="2654" vertical-scroll-proportion="0.07334963">
           <folding />
         </state>
       </provider>
